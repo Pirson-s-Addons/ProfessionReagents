@@ -1,0 +1,130 @@
+## Interface: 120001, 120005, 120007, 120100, 120105, 120107
+## Author: Pirson
+## Version: 1.00
+## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
+## Title: |cffd597ffProfessionReagents|r
+
+# https://warcraft.wiki.gg/wiki/Addon_Categories
+## Category: Professions
+## Category-deDE: Berufe
+## Category-esES: Profesiones
+## Category-esMX: Profesiones
+## Category-frFR: Métiers
+## Category-itIT: Professioni
+## Category-koKR: 전문 기술
+## Category-ptBR: Profissões
+## Category-ruRU: Профессии
+## Category-zhCN: 专业
+## Category-zhTW: 專業技能
+## Category-plPL: Profesje
+## Category-svSE: Yrken
+## Category-noNO: Yrker
+## Category-csCZ: Profese
+## Category-nlNL: Beroepen
+## Category-roRO: Profesii
+## Category-huHU: Szakmák
+## Category-elGR: Επαγγέλματα
+## Category-ukUA: Професії
+## Category-daDK: Erhverv
+## Category-fiFI: Ammatit
+## Category-skSK: Profesie
+## Category-bgBG: Професии
+## Category-hrHR: Profesije
+## Category-srRS: Profesije
+## Category-slSI: Poklici
+## Category-ltLT: Profesijos
+## Category-lvLV: Profesijas
+## Category-etEE: Ametid
+## Category-idID: Profesi
+## Category-msMY: Profesion
+## Category-faIR: حرفه‌ها
+## Category-heIL: מקצועות
+## Category-bnBD: পেশা
+## Category-urPK: پیشے
+## Category-taIN: தொழில்கள்
+## Category-teIN: వృత్తులు
+## Category-trTR: Meslekler
+## Category-jaJP: 専門職
+## Category-arSA: المهن
+## Category-hiIN: पेशे
+## Category-thTH: อาชีพ
+## Category-viVN: Nghề nghiệp
+
+## Notes: |cFF33CCFFShows which professions use each reagent and at what skill levels.|r
+## Notes-deDE: |cFF33CCFFZeigt, welche Berufe jedes Reagenz verwenden und auf welchen Fertigkeitsstufen.|r
+## Notes-esES: |cFF33CCFFMuestra qué profesiones usan cada componente y en qué niveles.|r
+## Notes-esMX: |cFF33CCFFMuestra qué profesiones usan cada componente y en qué niveles.|r
+## Notes-frFR: |cFF33CCFFAffiche quels métiers utilisent chaque composant et à quels niveaux.|r
+## Notes-itIT: |cFF33CCFFMostra quali professioni usano ogni reagente e a quali livelli.|r
+## Notes-koKR: |cFF33CCFF각 재료를 어떤 전문 기술이 어느 숙련도에서 사용하는지 보여줍니다.|r
+## Notes-ptBR: |cFF33CCFFMostra quais profissões usam cada reagente e em quais níveis.|r
+## Notes-ruRU: |cFF33CCFFПоказывает, какие профессии используют каждый реагент и на каких уровнях.|r
+## Notes-zhCN: |cFF33CCFF显示每种材料被哪些专业在哪些技能等级使用。|r
+## Notes-zhTW: |cFF33CCFF顯示每種材料被哪些專業在哪些技能等級使用。|r
+## Notes-plPL: |cFF33CCFFPokazuje, które profesje używają każdego składnika i na jakich poziomach.|r
+## Notes-svSE: |cFF33CCFFVisar vilka yrken som använder varje ingrediens och på vilka nivåer.|r
+## Notes-noNO: |cFF33CCFFViser hvilke yrker som bruker hver ingrediens og på hvilke nivåer.|r
+## Notes-csCZ: |cFF33CCFFUkazuje, které profese používají každou surovinu a na jakých úrovních.|r
+## Notes-nlNL: |cFF33CCFFToont welke beroepen elk reagens gebruiken en op welke niveaus.|r
+## Notes-roRO: |cFF33CCFFArată ce profesii folosesc fiecare reactiv și la ce niveluri.|r
+## Notes-huHU: |cFF33CCFFMegmutatja, mely szakmák és milyen szinten használják az egyes alapanyagokat.|r
+## Notes-elGR: |cFF33CCFFΔείχνει ποια επαγγέλματα χρησιμοποιούν κάθε υλικό και σε ποια επίπεδα.|r
+## Notes-ukUA: |cFF33CCFFПоказує, які професії використовують кожен реагент і на яких рівнях.|r
+## Notes-daDK: |cFF33CCFFViser hvilke fag der bruger hver ingrediens og på hvilke niveauer.|r
+## Notes-fiFI: |cFF33CCFFNäyttää, mitkä ammatit käyttävät kutakin raaka-ainetta ja millä tasoilla.|r
+## Notes-skSK: |cFF33CCFFUkazuje, ktoré profesie používajú každú surovinu a na akých úrovniach.|r
+## Notes-bgBG: |cFF33CCFFПоказва кои професии използват всяка съставка и на какви нива.|r
+## Notes-hrHR: |cFF33CCFFPrikazuje koje profesije koriste svaki sastojak i na kojim razinama.|r
+## Notes-srRS: |cFF33CCFFPrikazuje koje profesije koriste svaki sastojak i na kojim nivoima.|r
+## Notes-slSI: |cFF33CCFFPrikaže, kateri poklici uporabljajo vsako sestavino in na katerih ravneh.|r
+## Notes-ltLT: |cFF33CCFFRodo, kurios profesijos naudoja kiekvieną reagentą ir kokiais lygiais.|r
+## Notes-lvLV: |cFF33CCFFParāda, kuras profesijas izmanto katru reaģentu un kādos līmeņos.|r
+## Notes-etEE: |cFF33CCFFNäitab, millised elukutsed kasutavad iga koostisosa ja millistel tasemetel.|r
+## Notes-idID: |cFF33CCFFMenampilkan profesi mana yang memakai setiap bahan dan di level berapa.|r
+## Notes-msMY: |cFF33CCFFMenunjukkan profesion yang menggunakan setiap bahan dan pada tahap mana.|r
+## Notes-faIR: |cFF33CCFFنشان می‌دهد کدام حرفه‌ها از هر ماده و در چه سطوحی استفاده می‌کنند.|r
+## Notes-heIL: |cFF33CCFFמציג אילו מקצועות משתמשים בכל רכיב ובאילו רמות.|r
+## Notes-bnBD: |cFF33CCFFপ্রতিটি উপকরণ কোন পেশা কোন স্তরে ব্যবহার করে তা দেখায়।|r
+## Notes-urPK: |cFF33CCFFدکھاتا ہے کہ ہر جزو کون سے پیشے کن درجوں پر استعمال کرتے ہیں۔|r
+## Notes-taIN: |cFF33CCFFஒவ்வொரு மூலப்பொருளையும் எந்தத் தொழில்கள் எந்த நிலைகளில் பயன்படுத்துகின்றன என்பதைக் காட்டுகிறது.|r
+## Notes-teIN: |cFF33CCFFప్రతి పదార్థాన్ని ఏ వృత్తులు ఏ స్థాయిలలో ఉపయోగిస్తాయో చూపిస్తుంది.|r
+## Notes-trTR: |cFF33CCFFHer malzemeyi hangi mesleklerin hangi seviyelerde kullandığını gösterir.|r
+## Notes-jaJP: |cFF33CCFF各素材をどの専門職がどのスキルレベルで使うかを表示します。|r
+## Notes-arSA: |cFF33CCFFيعرض المهن التي تستخدم كل مكوّن وفي أي مستويات.|r
+## Notes-hiIN: |cFF33CCFFदिखाता है कि हर सामग्री को कौन से पेशे किन स्तरों पर इस्तेमाल करते हैं।|r
+## Notes-thTH: |cFF33CCFFแสดงว่าอาชีพใดใช้วัตถุดิบแต่ละชิ้นและใช้ที่ระดับใด|r
+## Notes-viVN: |cFF33CCFFHiện nghề nào dùng từng nguyên liệu và ở cấp độ nào.|r
+
+## X-License: MIT
+## X-Copyright: Copyright (c) 2026 Pirson
+## X-Website: https://github.com/Pirson-s-Addons/ProfessionReagents
+## X-Localizations: enUS, esES, esMX, deDE, frFR, itIT, ptBR, ruRU, koKR, zhCN, zhTW, plPL, svSE, noNO, trTR, jaJP, arSA, hiIN, thTH, viVN, csCZ
+## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
+
+## SavedVariables: ProfessionReagentsDB
+
+Core/Compat.lua
+Locales/enUS.lua
+Locales/esES.lua
+Locales/deDE.lua
+Locales/frFR.lua
+Locales/itIT.lua
+Locales/ptBR.lua
+Locales/ruRU.lua
+Locales/koKR.lua
+Locales/zhCN.lua
+Locales/zhTW.lua
+Locales/plPL.lua
+Locales/svSE.lua
+Locales/noNO.lua
+Locales/trTR.lua
+Locales/jaJP.lua
+Locales/arSA.lua
+Locales/hiIN.lua
+Locales/thTH.lua
+Locales/viVN.lua
+Locales/csCZ.lua
+Data/Retail.lua
+Core/ProfessionReagents.lua
+UI/About.lua
+UI/Options.lua
