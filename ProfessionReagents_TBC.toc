@@ -1,6 +1,6 @@
 ## Interface: 20400, 20501, 20502, 20503, 20504, 20505, 20506
 ## Author: Pirson
-## Version: 1.00
+## Version: 1.01
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
@@ -95,6 +95,8 @@
 ## Notes-thTH: |cFF33CCFFแสดงว่าอาชีพใดใช้วัตถุดิบแต่ละชิ้นและใช้ที่ระดับใด|r
 ## Notes-viVN: |cFF33CCFFHiện nghề nào dùng từng nguyên liệu và ở cấp độ nào.|r
 
+## X-Curse-Project-ID: 1831424
+## X-Wago-ID: qKQglqNx
 ## X-License: MIT
 ## X-Copyright: Copyright (c) 2026 Pirson
 ## X-Website: https://github.com/Pirson-s-Addons/ProfessionReagents

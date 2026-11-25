@@ -2,3 +2,7 @@ package-as: ProfessionReagents
 
 ignore:
   - tools
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
