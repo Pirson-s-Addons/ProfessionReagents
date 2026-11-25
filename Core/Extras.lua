@@ -39,10 +39,17 @@ local function Pct(p)
     return ("%.1f%%"):format(p)
 end
 
+-- Icono del objeto (GetItemInfoInstant lo da aunque no este en cache), recortado como en las bolsas
+local GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant
+local function Icon(id)
+    local icon = GetItemInfoInstant and select(5, GetItemInfoInstant(id))
+    return icon and ("|T" .. icon .. ":14:14:0:0:64:64:5:59:5:59|t ") or ""
+end
+
 -- Las lineas de una tabla de botin: { { itemID, pct, min, max, nombre }, ... }
 local function AddLoot(tooltip, loot)
     for _, e in ipairs(loot) do
-        tooltip:AddDoubleLine("  " .. ItemName(e[1], e[5]) .. Amount(e[3], e[4]), Pct(e[2]),
+        tooltip:AddDoubleLine("  " .. Icon(e[1]) .. ItemName(e[1], e[5]) .. Amount(e[3], e[4]), Pct(e[2]),
             0.95, 0.95, 0.95, 0.8, 0.8, 0.8)
     end
 end
@@ -133,13 +140,16 @@ local function AddSources(tooltip, itemID)
 end
 
 -- Forever tiene TooltipDataProcessor: un gancho para todas las fichas de objeto
-TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tooltip, data)
-    local id = data and data.id
-    if not addon.db or id == nil or (issecretvalue and issecretvalue(id)) then return end
-    local added = AddDisenchant(tooltip, id)
-    if AddSources(tooltip, id) then added = true end
-    if added then tooltip:Show() end
-end)
+-- (misma guarda que Core/ProfessionReagents.lua: sin el, este fichero no puede romper la carga)
+if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType then
+    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tooltip, data)
+        local id = data and data.id
+        if not addon.db or id == nil or (issecretvalue and issecretvalue(id)) then return end
+        local added = AddDisenchant(tooltip, id)
+        if AddSources(tooltip, id) then added = true end
+        if added then tooltip:Show() end
+    end)
+end
 
 --------------------------------------------------
 -- MENAS Y PLANTAS
