@@ -12,9 +12,9 @@ on:
         description: Tag already released (for example v1.01)
         required: true
       targets:
-        description: wago = Wago only; all = CurseForge, Wago and the GitHub release
+        description: wago = Wago only; all = CurseForge, Wago and the GitHub release; discord = only the changelog card
         type: choice
-        options: [wago, all]
+        options: [wago, all, discord]
         default: wago
 
 jobs:
