@@ -1,0 +1,36 @@
+175404|ore|275|Rich Thorium Vein|177710|10620~Thorium Ore~91.5~1~1;12365~Dense Stone~38.6~1~3;12363~Arcane Crystal~4.1~1~1;249426~Pitchblende~4~1~1;12364~Huge Emerald~1.2~1~1;12799~Large Opal~1.1~1~1;7910~Star Ruby~0.9~1~1;12800~Azerothian Diamond~0.9~1~1
+566779|ore|300|Heavy Thorium Vein|1308|248815~Heavy Thorium Ore~86.6~1~1;10620~Thorium Ore~85.8~1~1;12365~Dense Stone~33.4~1~3;249426~Pitchblende~4.2~1~1;248820~Torbernite~3.1~1~1;248819~Fel Crystal~2.7~1~1;12799~Large Opal~0.7~1~1
+181069|ore|305|Large Obsidian Chunk|364|22202~Small Obsidian Shard~48.9~2~3;22203~Large Obsidian Shard~39~1~1;7076~Essence of Earth~9.3~1~1;12800~Azerothian Diamond~1.6~1~1;12363~Arcane Crystal~0.5~1~1;12364~Huge Emerald~0.5~1~1
+181068|ore|305|Small Obsidian Chunk|934|22202~Small Obsidian Shard~90~1~1;7076~Essence of Earth~4~1~1;22203~Large Obsidian Shard~3.7~1~1;12364~Huge Emerald~1.1~1~1;12800~Azerothian Diamond~0.9~1~1
+1618|herb|1|Peacebloom|79818|2447~Peacebloom~99.9~1~3;268415~Commonplace Herb Seeds~1.1~1~1
+1617|herb|1|Silverleaf|78641|765~Silverleaf~99.9~1~3;268415~Commonplace Herb Seeds~1.1~1~1
+656161|herb|1|Stunted Silverleaf|13281|765~Silverleaf~100~1~1
+656160|herb|1|Wilted Peacebloom|13309|2447~Peacebloom~100~1~1
+1619|herb|15|Earthroot|43802|2449~Earthroot~99.5~1~3;249399~Frilled Lichen~8.1~1~1;268415~Commonplace Herb Seeds~1.1~1~1
+1620|herb|50|Mageroyal|32427|785~Mageroyal~97.9~1~3;2452~Swiftthistle~21.3~1~2;249399~Frilled Lichen~7.7~1~1;268416~Uncommon Herb Seeds~1~1~1
+1621|herb|70|Briarthorn|33847|2450~Briarthorn~96.7~1~3;2452~Swiftthistle~41.2~1~2;249399~Frilled Lichen~7.6~1~1;268416~Uncommon Herb Seeds~1.1~1~1
+2045|herb|85|Stranglekelp|11837|3820~Stranglekelp~99.6~1~3;249399~Frilled Lichen~7.1~1~1;268416~Uncommon Herb Seeds~1.1~1~1
+1622|herb|100|Bruiseweed|26659|2453~Bruiseweed~99.6~1~3;249399~Frilled Lichen~7.6~1~1;268416~Uncommon Herb Seeds~1.1~1~1
+1623|herb|115|Wild Steelbloom|14403|3355~Wild Steelbloom~99.7~1~3;249399~Frilled Lichen~6.4~1~1;268416~Uncommon Herb Seeds~1~1~1
+1628|herb|120|Grave Moss|3682|3369~Grave Moss~99.5~1~3;249399~Frilled Lichen~5.3~1~1;268416~Uncommon Herb Seeds~1.2~1~1
+1624|herb|125|Kingsblood|32211|3356~Kingsblood~99.6~1~3;249399~Frilled Lichen~6.4~1~1;268416~Uncommon Herb Seeds~1.1~1~1
+2041|herb|150|Liferoot|85579|3357~Liferoot~99.4~1~3;249424~Rosecap~9.6~1~1;268417~Unusual Herb Seeds~1~1~1
+2042|herb|160|Fadeleaf|6703|3818~Fadeleaf~99.5~1~3;249424~Rosecap~9.5~1~1;268417~Unusual Herb Seeds~1.2~1~1
+2046|herb|170|Goldthorn|13607|3821~Goldthorn~99.4~1~3;249424~Rosecap~9.1~1~1;268418~Scarce Herb Seeds~1.2~1~1
+2043|herb|185|Khadgar's Whisker|11159|3358~Khadgar's Whisker~99.4~1~3;249424~Rosecap~9.2~1~1;268417~Unusual Herb Seeds~1.1~1~1
+2044|herb|195|Wintersbite|1069|3819~Wintersbite~98.9~1~3;249424~Rosecap~12.2~1~1;268417~Unusual Herb Seeds~0.8~1~1
+2866|herb|205|Firebloom|66510|4625~Firebloom~99.4~1~3;249424~Rosecap~8.3~1~1;268418~Scarce Herb Seeds~0.8~1~1
+142140|herb|210|Purple Lotus|5127|8831~Purple Lotus~98.9~1~3;8153~Wildvine~10.5~1~3;249424~Rosecap~9~1~1;268418~Scarce Herb Seeds~1.2~1~1
+142141|herb|220|Arthas' Tears|37521|8836~Arthas' Tears~98.8~1~3;249424~Rosecap~5~1~1;268418~Scarce Herb Seeds~1.2~1~1
+142142|herb|230|Sungrass|146936|8838~Sungrass~99.1~1~3;249274~Stranglevine~10.8~1~1;268418~Scarce Herb Seeds~1~1~1
+142143|herb|235|Blindweed|1864|8839~Blindweed~99.3~1~3;249274~Stranglevine~9.9~1~1;268418~Scarce Herb Seeds~1.4~1~1
+142144|herb|245|Ghost Mushroom|751|8845~Ghost Mushroom~96.9~1~1;249274~Stranglevine~10.9~1~1;268418~Scarce Herb Seeds~1.2~1~1
+142145|herb|250|Gromsblood|829|8846~Gromsblood~96.4~1~3;249274~Stranglevine~13.6~1~1;268418~Scarce Herb Seeds~1~1~1
+176583|herb|260|Golden Sansam|73216|13464~Golden Sansam~99.6~1~3;249274~Stranglevine~11.5~1~1;268418~Scarce Herb Seeds~0.8~1~1
+176584|herb|270|Dreamfoil|192661|13463~Dreamfoil~98.9~1~3;249274~Stranglevine~11~1~1;268418~Scarce Herb Seeds~1.3~1~1
+176586|herb|280|Mountain Silversage|166565|13465~Mountain Silversage~98.8~1~3;249274~Stranglevine~11.5~1~1;268418~Scarce Herb Seeds~1.2~1~1
+176587|herb|285|Plaguebloom|105235|13466~Plaguebloom~98.2~1~3;249274~Stranglevine~13~1~1;268418~Scarce Herb Seeds~1.6~1~1
+176588|herb|290|Icecap|65701|13467~Icecap~98.4~1~3;249274~Stranglevine~13.2~1~1;268418~Scarce Herb Seeds~1.4~1~1
+176589|herb|300|Black Lotus|482|13468~Black Lotus~99.4~1~1;249274~Stranglevine~11.4~1~1
+566786|herb|300|Demonsage|193|13465~Mountain Silversage~95.3~1~3;248821~Demonsage~85~1~3;249274~Stranglevine~10.4~1~1;248822~Death Lotus~8.3~1~1
+566788|herb|300|Marefoil|94|13463~Dreamfoil~87.2~1~3;248823~Marefoil~87.2~1~3;249274~Stranglevine~12.8~1~1;248822~Death Lotus~5.3~1~1

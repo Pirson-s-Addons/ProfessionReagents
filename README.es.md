@@ -21,6 +21,7 @@ Minería                1-70
 
 - **Todas las profesiones**: Alquimia, Herrería, Encantamiento, Ingeniería, Joyería, Inscripción, Peletería, Sastrería, Minería (fundición), Cocina y Primeros auxilios.
 - **Datos de tu cliente**: sacados de las tablas de recetas del propio juego para WoW Forever, Classic Era, TBC, Wrath, Cataclysm, Mists, Legion (también WoD), BfA, Shadowlands y Retail. En Retail cada línea de expansión sale aparte (Herrería clásica, Herrería de Khaz Algar...).
+- **Extras en WoW Forever**: qué sale al desencantar un objeto verde, azul o morado (si eres encantador, o para todos con una opción) y su valor medio con Auctionator; en polvos, esencias y fragmentos, de qué objetos salen; y al pasar el ratón por una mena o una planta, qué puede dar y con qué frecuencia.
 - Nombres de las profesiones en el idioma de tu juego, ajustes en el panel **Opciones → Accesorios** del propio juego, 20 idiomas, sin librerías.
 
 ## Uso
@@ -35,6 +36,8 @@ Minería                1-70
 3. Reinicia WoW y activa el addon.
 
 ## Notas
+
+- Las probabilidades de desencantar y de recolección son las observadas por los usuarios de [Wowhead](https://www.wowhead.com/forever), no tablas oficiales. Las fichas de los nodos funcionan en cualquier idioma del juego con [GatherRadar](https://www.curseforge.com/wow/addons/gather-radar) instalado; sin él, solo en inglés.
 
 - Las recetas de Retail desde Dragonflight no traen rango de nivel en los datos del juego (usan la dificultad de la receta): en esas solo sale la profesión.
 

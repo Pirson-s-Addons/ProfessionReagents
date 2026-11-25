@@ -1,0 +1,4 @@
+package-as: ProfessionReagents
+
+ignore:
+  - tools

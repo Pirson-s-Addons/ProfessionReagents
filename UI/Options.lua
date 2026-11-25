@@ -63,11 +63,14 @@ local function CreateOptions()
     header:SetPoint("TOPLEFT", MARGIN_X, -56)
     header:SetText(HEADER .. L["TOOLTIP_HEADER"] .. "|r")
 
-    local range
+    local range, extras
+    local function Dim(cb, on)
+        if on then cb:Enable() else cb:Disable() end -- SetEnabled no existe en 2.4.3
+        cb:SetAlpha(on and 1 or 0.5)
+    end
     local function Refresh()
-        local on = addon.db.enabled
-        if on then range:Enable() else range:Disable() end -- SetEnabled no existe en 2.4.3
-        range:SetAlpha(on and 1 or 0.5)
+        Dim(range, addon.db.enabled)
+        for _, cb in ipairs(extras or {}) do Dim(cb, addon.db.disenchant) end
     end
 
     local checks = {
@@ -77,11 +80,32 @@ local function CreateOptions()
     range = Check(panel, "ProfessionReagentsRangeCB", MARGIN_X + 20, -110, L["SHOW_RANGE"], L["TT_SHOW_RANGE"], "showRange")
     checks[2] = range
 
-    Separator(panel, -150)
+    local y = -150
+    -- Desencantar y recoleccion (Core/Extras.lua): solo donde hay datos (WoW Forever)
+    extras = {}
+    if addon.DISENCHANT or addon.GATHER_NODES then
+        Separator(panel, y)
+        local h2 = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+        h2:SetPoint("TOPLEFT", MARGIN_X, y - 16)
+        h2:SetText(HEADER .. L["EXTRAS_HEADER"] .. "|r")
+        local function Extra(name, indent, row, label, tip, key)
+            local cb = Check(panel, name, MARGIN_X + indent, y - 40 - row * 30, label, tip, key, Refresh)
+            checks[#checks + 1] = cb
+            return cb
+        end
+        Extra("ProfessionReagentsDECB", 0, 0, L["DE_ENABLE"], L["TT_DE_ENABLE"], "disenchant")
+        extras[#extras + 1] = Extra("ProfessionReagentsDEAlwaysCB", 20, 1, L["DE_ALWAYS"], L["TT_DE_ALWAYS"], "disenchantAlways")
+        extras[#extras + 1] = Extra("ProfessionReagentsDEPriceCB", 20, 2, L["DE_PRICE"], L["TT_DE_PRICE"], "disenchantPrice")
+        Extra("ProfessionReagentsDESourcesCB", 0, 3, L["DE_SOURCES"], L["TT_DE_SOURCES"], "disenchantSources")
+        Extra("ProfessionReagentsGatherCB", 0, 4, L["GATHER_ENABLE"], L["TT_GATHER_ENABLE"], "gather")
+        y = y - 40 - 5 * 30
+    end
+
+    Separator(panel, y)
 
     local reset = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
     addon.SetSize(reset, 180, 26)
-    reset:SetPoint("TOPLEFT", MARGIN_X, -166)
+    reset:SetPoint("TOPLEFT", MARGIN_X, y - 16)
     reset:SetText(L["DEFAULTS"])
     AddTooltip(reset, L["TT_DEFAULTS"])
 

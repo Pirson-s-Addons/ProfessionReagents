@@ -21,6 +21,7 @@ Mining                 1-70
 
 - **Every profession**: Alchemy, Blacksmithing, Enchanting, Engineering, Jewelcrafting, Inscription, Leatherworking, Tailoring, Mining (smelting), Cooking and First Aid.
 - **Data for your client**: built from the game's own recipe tables for WoW Forever, Classic Era, TBC, Wrath, Cataclysm, Mists, Legion (also WoD), BfA, Shadowlands and Retail. In Retail each expansion line shows on its own (Classic Blacksmithing, Khaz Algar Blacksmithing...).
+- **WoW Forever extras**: what a green, blue or purple item gives when disenchanted (on enchanters, or for everyone with an option) and its average value with Auctionator; on dusts, essences and shards, which items give them; and when you hover an ore vein or herb, what it can give and how often.
 - Profession names in your game language, settings in the game's own **Options → AddOns** panel, 20 languages, no libraries.
 
 ## Usage
@@ -35,6 +36,8 @@ Mining                 1-70
 3. Restart WoW and enable the addon.
 
 ## Notes
+
+- The disenchant and gathering chances are the drop rates observed by [Wowhead](https://www.wowhead.com/forever) users, not official tables. Node tooltips work in every game language with [GatherRadar](https://www.curseforge.com/wow/addons/gather-radar) installed; without it, only in English.
 
 - Retail recipes from Dragonflight on have no skill range in the game data (they use recipe difficulty instead): for them only the profession shows.
 

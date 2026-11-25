@@ -14,6 +14,12 @@ addon = addon or ProfessionReagents -- clientes < 3.0 no pasan argumentos
 addon.defaults = {
     enabled = true,
     showRange = true,
+    -- Core/Extras.lua (solo WoW Forever)
+    disenchant = true,      -- que sale al desencantar
+    disenchantAlways = false, -- tambien si no eres encantador
+    disenchantSources = true, -- en un material: de que objetos sale
+    disenchantPrice = true, -- valor medio con Auctionator
+    gather = true,          -- en menas y plantas: que puede salir
 }
 
 -- Linea raiz de cada profesion -> su hechizo, que da el nombre ya traducido
@@ -96,7 +102,7 @@ end
 -- del tooltip), y debajo la cabecera "Profesiones". Se esconde al limpiar u
 -- ocultar el tooltip (OnTooltipCleared no existe en todos los clientes: pcall).
 local dividers = {}
-local function Divider(tooltip)
+local function Divider(tooltip, title)
     tooltip:AddLine(" ")
     local name = tooltip.GetName and tooltip:GetName()
     local text = name and _G[name .. "TextLeft" .. tooltip:NumLines()]
@@ -116,8 +122,9 @@ local function Divider(tooltip)
         line:SetPoint("RIGHT", tooltip, "RIGHT", -10, 0)
         line:Show()
     end
-    tooltip:AddLine(addon.L["TOOLTIP_TITLE"], 0.55, 0.55, 0.6)
+    tooltip:AddLine(title or addon.L["TOOLTIP_TITLE"], 0.55, 0.55, 0.6)
 end
+addon.Divider = Divider -- tambien para Core/Extras.lua (desencantar, recoleccion)
 
 -- Icono recortado (64x64, del 5 al 59): sin el marco de Blizzard
 local icons = {}
@@ -153,6 +160,8 @@ local function Ranks()
     end
     return ranks
 end
+
+addon.Ranks = Ranks
 
 -- Nivel en una linea. En Retail cada expansion tiene el suyo (Herreria
 -- clasica, de Khaz Algar...); en Forever las lineas hijas son la misma
