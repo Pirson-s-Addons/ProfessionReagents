@@ -2,7 +2,7 @@
 -- ProfessionReagents.lua
 --========================================================
 -- En la ficha de cada componente de profesion: para que profesiones sirve y
--- en que rango de nivel se usa. Los datos (Data/<cliente>.lua) los genera
+-- en que rango de nivel se usa. Los datos (Data/<expansion>/Reagents.lua) los genera
 -- _project/tools/professionreagents_data.py desde las tablas del juego.
 --
 -- Corre en todos los clientes (2.4.3 -> Retail): la API que cambia entre
@@ -126,6 +126,52 @@ local function Divider(tooltip, title)
 end
 addon.Divider = Divider -- tambien para Core/Extras.lua (desencantar, recoleccion)
 
+-- Fondo ilustrado (img/bg_<nombre>.tga, 512x256) detras de todo el tooltip.
+-- Gana la primera seccion que lo pide; se esconde con el tooltip. En los
+-- clientes con NineSlice va dentro de el: es un marco hijo y taparia la textura.
+local backgrounds = {}
+local function Crop(bg)
+    local w, h = bg:GetWidth(), bg:GetHeight()
+    if not (w and h and w > 0 and h > 0) then return end
+    local ratio = (w / h) / 2 -- la imagen es 2:1; el dibujo esta a la derecha
+    if ratio < 1 then bg:SetTexCoord(1 - ratio, 1, 0, 1)
+    else bg:SetTexCoord(0, 1, 0.5 - 0.5 / ratio, 0.5 + 0.5 / ratio) end
+end
+function addon.Background(tooltip, name)
+    local bg = backgrounds[tooltip]
+    if not bg then
+        local parent = tooltip.NineSlice or tooltip
+        bg = parent:CreateTexture(nil, "BACKGROUND", nil, 7)
+        bg:SetPoint("TOPLEFT", tooltip, "TOPLEFT", 3, -3)
+        bg:SetPoint("BOTTOMRIGHT", tooltip, "BOTTOMRIGHT", -3, 3)
+        bg:SetAlpha(0.85)
+        local hide = function() bg:Hide() bg.name = nil end
+        tooltip:HookScript("OnHide", hide)
+        pcall(tooltip.HookScript, tooltip, "OnTooltipCleared", hide)
+        tooltip:HookScript("OnSizeChanged", function() if bg:IsShown() then Crop(bg) end end)
+        backgrounds[tooltip] = bg
+        hide()
+    end
+    if bg.name then return end
+    bg.name = name
+    bg:SetTexture("Interface\\AddOns\\ProfessionReagents\\img\\backgrounds\\bg_" .. name)
+    bg:Show()
+    Crop(bg)
+end
+
+-- Fondo de un reagente segun su subclase de "Objetos comerciables" (7.0+;
+-- antes no hay GetItemInfoInstant y queda el generico)
+local TRADE_GOODS, BG_BY_SUBCLASS = 7, {
+    [4] = "prospecting", [5] = "crafting", [6] = "skinning", [7] = "mining", [8] = "fishing",
+    [9] = "herbalism", [10] = "extraction", [12] = "enchanting", [16] = "milling",
+}
+local GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant
+local function ReagentBackground(itemID)
+    if not GetItemInfoInstant then return "crafting" end
+    local _, _, _, _, _, classID, subclassID = GetItemInfoInstant(itemID)
+    return classID == TRADE_GOODS and BG_BY_SUBCLASS[subclassID] or "crafting"
+end
+
 -- Icono recortado (64x64, del 5 al 59): sin el marco de Blizzard
 local icons = {}
 local function Icon(root)
@@ -195,6 +241,7 @@ local function AddLines(tooltip, itemID)
     local uses = addon.GetUses(itemID)
     if not uses then return end
     Divider(tooltip)
+    addon.Background(tooltip, ReagentBackground(itemID))
     -- El color es un extra: si algo falla (API distinta, valor secreto), el
     -- rango sale sin color pero las lineas salen siempre
     local okRanks, ranks = pcall(Ranks)
@@ -245,6 +292,11 @@ end
 --
 -- version solo sube si cambia el significado de algo ya existente; anadir
 -- funciones o campos no la sube.
+--
+-- Core/Extras.lua anade, en los clientes con esos datos (nil si no los hay):
+--   GetNodeLoot(nombre), GetDisenchant(item), GetDisenchantSources(item),
+--   GetSkinning(npcID), GetProspecting(item), GetMilling(item)
+--   api.GetNodeLoot("Copper Vein") -> { kind = "ore", loot = { { itemID = 2770, name = "Copper Ore", pct = 100, min = 1, max = 4 }, ... } }
 --
 --   local api = ProfessionReagentsAPI
 --   if api and api.version == 1 then

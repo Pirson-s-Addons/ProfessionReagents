@@ -104,6 +104,7 @@
 ## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
 
 ## SavedVariables: ProfessionReagentsDB
+## OptionalDeps: GatherRadar, Auctionator
 
 Core/Compat.lua
 Locales/enUS.lua
@@ -126,7 +127,15 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Wrath.lua
+Data/Wrath/Reagents.lua
+Data/Wrath/Mining.lua
+Data/Wrath/Herbalism.lua
+Data/Wrath/Treasure.lua
+Data/Wrath/Enchanting.lua
+Data/Wrath/Skinning.lua
+Data/Wrath/Prospecting.lua
+Data/Wrath/Milling.lua
 Core/ProfessionReagents.lua
+Core/Extras.lua
 UI/About.lua
 UI/Options.lua

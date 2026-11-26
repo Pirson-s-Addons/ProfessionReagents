@@ -13,13 +13,17 @@ GameTooltip = tip
 GameTooltipTextLeft1 = { GetText = function() return tip.title end }
 local itemInfo = {}
 C_Item = { GetItemInfo = function(id) local t = itemInfo[id] if t then return unpack(t, 1, 12) end end }
-TooltipDataProcessor = { AddTooltipPostCall = function(_, f) hooks.item = f end }
-Enum = { TooltipDataType = { Item = 0 } }
+TooltipDataProcessor = { AddTooltipPostCall = function(kind, f) if kind == 0 then hooks.item = f else hooks.unit = f end end }
+Enum = { TooltipDataType = { Item = 0, Unit = 1 } }
 local addon = { L = setmetatable({}, { __index = function(_, k) return k end }) }
 addon.db = { disenchant = true, disenchantAlways = true, disenchantSources = true, disenchantPrice = true, gather = true }
 addon.Divider = function(_, title) lines[#lines + 1] = "--" .. title end
+addon.Background = function() end
 addon.Ranks = function() return {} end
-assert(loadfile("Data/ForeverExtras.lua"))("ProfessionReagents", addon)
+assert(loadfile("Data/Forever/Mining.lua"))("ProfessionReagents", addon)
+assert(loadfile("Data/Forever/Herbalism.lua"))("ProfessionReagents", addon)
+assert(loadfile("Data/Forever/Skinning.lua"))("ProfessionReagents", addon)
+assert(loadfile("Data/Forever/Enchanting.lua"))("ProfessionReagents", addon)
 assert(loadfile("Core/Extras.lua"))("ProfessionReagents", addon)
 
 -- Verde de armadura nivel 10: polvo extrano y esencia menor de magia

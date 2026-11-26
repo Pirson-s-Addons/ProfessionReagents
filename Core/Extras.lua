@@ -6,13 +6,14 @@
 --     o con "disenchantAlways"), con su valor medio si esta Auctionator.
 --   * Material de encantamiento: de que objetos sale.
 --   * Mena o planta bajo el raton: lo que puede salir y con que probabilidad.
--- Los datos (Data/ForeverExtras.lua) los genera tools/forever_extras.py
+-- Los datos (Data/Forever/<profesion>.lua) los genera tools/forever_extras.py
 -- desde Wowhead (seccion WoW Forever).
 
 local _, addon = ...
+addon = addon or ProfessionReagents -- clientes < 3.0 no pasan argumentos
 local L = addon.L
 
-if not (addon.GATHER_NODES or addon.DISENCHANT) then return end -- otro cliente: sin datos
+if not (addon.GATHER_NODES or addon.DISENCHANT or addon.SKINNING) then return end -- otro cliente: sin datos
 
 local ENCHANTING = 333
 local GetItemInfo = (C_Item and C_Item.GetItemInfo) or GetItemInfo
@@ -90,6 +91,7 @@ local function AddDisenchant(tooltip, itemID)
     local loot = addon.DisenchantResults(quality, classID, itemLevel or 0)
     if not loot then return end
     addon.Divider(tooltip, L["DE_TITLE"])
+    addon.Background(tooltip, "enchanting")
     AddLoot(tooltip, loot)
     if db.disenchantPrice then
         local value, known = 0, true
@@ -126,6 +128,7 @@ local function AddSources(tooltip, itemID)
     local list = SourcesOf(itemID)
     if not list then return end
     addon.Divider(tooltip, L["DE_FROM"])
+    addon.Background(tooltip, "enchanting")
     for _, s in ipairs(list) do
         local color = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[s.q]
         -- Calidad y tipo con los textos del propio juego (ya traducidos); si faltan, los nuestros
@@ -147,6 +150,17 @@ if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and
         if not addon.db or id == nil or (issecretvalue and issecretvalue(id)) then return end
         local added = AddDisenchant(tooltip, id)
         if AddSources(tooltip, id) then added = true end
+        -- Mineral / hierba: que da al prospectarlo / molerlo (misma opcion que menas y plantas)
+        local db = addon.db
+        for _, p in ipairs({ { addon.PROSPECTING, "PROSPECT_TITLE", "prospecting" }, { addon.MILLING, "MILL_TITLE", "milling" } }) do
+            local loot = db.gather and p[1] and p[1][id]
+            if loot then
+                addon.Divider(tooltip, L[p[2]])
+                addon.Background(tooltip, p[3])
+                AddLoot(tooltip, loot)
+                added = true
+            end
+        end
         if added then tooltip:Show() end
     end)
 end
@@ -181,7 +195,87 @@ GameTooltip:HookScript("OnShow", function(tooltip)
     if not node then return end
     lastNode = text
     addon.Divider(tooltip, L["GATHER_TITLE"])
+    addon.Background(tooltip, node.kind == "ore" and "mining" or node.kind == "treasure" and "treasure" or "herbalism")
     AddLoot(tooltip, node.loot)
     tooltip:Show()
 end)
 addon.LastNode = function() return lastNode end -- para depurar con /dump
+
+--------------------------------------------------
+-- DESUELLO
+--------------------------------------------------
+-- En la ficha de una criatura: lo que da al desollarla (misma opcion que menas y plantas)
+local function NpcID(unit)
+    local ok, guid = pcall(UnitGUID, unit)
+    if not ok or type(guid) ~= "string" or (issecretvalue and issecretvalue(guid)) then return end
+    local kind, _, _, _, _, id = strsplit("-", guid)
+    return (kind == "Creature") and tonumber(id) or nil
+end
+
+local function AddSkinning(tooltip)
+    local db = addon.db
+    if not (db and db.gather and addon.SKINNING) then return end
+    local _, unit = tooltip:GetUnit()
+    local loot = unit and addon.SKINNING[NpcID(unit) or 0]
+    if not loot then return end
+    addon.Divider(tooltip, L["GATHER_TITLE"])
+    addon.Background(tooltip, "skinning")
+    AddLoot(tooltip, loot)
+    tooltip:Show()
+end
+
+if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType then
+    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, AddSkinning)
+end
+
+--------------------------------------------------
+-- API PUBLICA (anade a ProfessionReagentsAPI; ver Core/ProfessionReagents.lua)
+--------------------------------------------------
+-- Botin como tabla nueva: { { itemID, name (ingles), pct, min, max }, ... }
+local function Copy(loot)
+    if not loot then return nil end
+    local out = {}
+    for i, e in ipairs(loot) do
+        out[i] = { itemID = e[1], name = e[5], pct = e[2], min = e[3], max = e[4] }
+    end
+    return out
+end
+
+local function ToID(item)
+    if type(item) == "number" then return item end
+    return type(item) == "string" and tonumber(item:match("item:(%d+)") or item) or nil
+end
+
+local api = ProfessionReagentsAPI
+if api then
+    -- Que da al desencantarlo (itemID o enlace); nil si no se desencanta o el
+    -- cliente aun no tiene el objeto en cache
+    api.GetDisenchant = function(item)
+        local id = ToID(item)
+        local _, _, quality, itemLevel, _, _, _, _, _, _, _, classID = GetItemInfo(id or item)
+        if not (quality and classID) then return nil end
+        return Copy(addon.DisenchantResults(quality, classID, itemLevel or 0))
+    end
+    -- De que objetos sale un material: { { quality, kind ("armor"/"weapon"/nil), minLevel, maxLevel, pct }, ... }
+    api.GetDisenchantSources = function(item)
+        local list = SourcesOf(ToID(item) or 0)
+        if not list then return nil end
+        local out = {}
+        for i, s in ipairs(list) do
+            out[i] = { quality = s.q, kind = s.cls, minLevel = s.lo, maxLevel = s.hi, pct = s.pct }
+        end
+        return out
+    end
+    -- Veta, planta o cofre por su nombre (ingles; con GatherRadar, tambien en el idioma del cliente):
+    -- { kind = "ore"/"herb"/"treasure", loot = {...} }
+    --   api.GetNodeLoot("Copper Vein").loot[1] -> { itemID = 2770, name = "Copper Ore", pct = 96.6, min = 1, max = 1 }
+    api.GetNodeLoot = function(name)
+        local node = type(name) == "string" and NodeByName(name)
+        return node and { kind = node.kind, loot = Copy(node.loot) } or nil
+    end
+    -- Lo que da al desollar una criatura (npcID)
+    api.GetSkinning = function(npcID) return Copy(addon.SKINNING and addon.SKINNING[npcID]) end
+    -- Lo que da al prospectar un mineral / moler una hierba (itemID o enlace)
+    api.GetProspecting = function(item) return Copy(addon.PROSPECTING and addon.PROSPECTING[ToID(item) or 0]) end
+    api.GetMilling = function(item) return Copy(addon.MILLING and addon.MILLING[ToID(item) or 0]) end
+end

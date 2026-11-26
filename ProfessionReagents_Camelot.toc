@@ -127,8 +127,12 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Forever.lua
-Data/ForeverExtras.lua
+Data/Forever/Reagents.lua
+Data/Forever/Mining.lua
+Data/Forever/Herbalism.lua
+Data/Forever/Treasure.lua
+Data/Forever/Enchanting.lua
+Data/Forever/Skinning.lua
 Core/ProfessionReagents.lua
 Core/Extras.lua
 UI/About.lua

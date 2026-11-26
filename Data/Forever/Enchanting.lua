@@ -1,0 +1,48 @@
+-- Generado por tools/forever_extras.py desde Wowhead (wowhead.com/forever): no editar a mano.
+-- Probabilidades observadas por los usuarios de Wowhead, no tablas oficiales.
+local _, addon = ...
+addon = addon or ProfessionReagents -- clientes < 3.0 no pasan argumentos
+
+-- Tramos de desencantamiento: calidad, tipo (nil = cualquiera), niveles y lo que da
+addon.DISENCHANT = {
+    { q = 2, cls = "armor", lo = 5, hi = 15, loot = { { 10940, 80.2, 1, 1, "Strange Dust" }, { 10938, 19.0, 1, 1, "Lesser Magic Essence" } } },
+    { q = 2, cls = "armor", lo = 16, hi = 20, loot = { { 10940, 75.2, 1, 1, "Strange Dust" }, { 10939, 26.0, 1, 1, "Greater Magic Essence" }, { 10978, 8.0, 1, 1, "Small Glimmering Shard" }, { 10938, 3.2, 1, 1, "Lesser Magic Essence" } } },
+    { q = 2, cls = "armor", lo = 21, hi = 25, loot = { { 10940, 75.6, 1, 1, "Strange Dust" }, { 10998, 16.0, 1, 1, "Lesser Astral Essence" }, { 10939, 14.2, 1, 1, "Greater Magic Essence" }, { 10978, 12.0, 1, 1, "Small Glimmering Shard" } } },
+    { q = 2, cls = "armor", lo = 26, hi = 30, loot = { { 11083, 75.8, 1, 1, "Soul Dust" }, { 11082, 21.4, 1, 1, "Greater Astral Essence" }, { 10940, 16.8, 1, 1, "Strange Dust" }, { 10998, 9.6, 1, 1, "Lesser Astral Essence" }, { 10978, 7.4, 1, 1, "Small Glimmering Shard" }, { 11084, 6.2, 1, 1, "Large Glimmering Shard" } } },
+    { q = 2, cls = "armor", lo = 31, hi = 35, loot = { { 11083, 75.8, 1, 1, "Soul Dust" }, { 11134, 23.0, 1, 1, "Lesser Mystic Essence" }, { 11082, 8.4, 1, 1, "Greater Astral Essence" }, { 11138, 6.0, 1, 1, "Small Glowing Shard" } } },
+    { q = 2, cls = "armor", lo = 36, hi = 40, loot = { { 11137, 76.0, 1, 1, "Vision Dust" }, { 11135, 21.4, 1, 1, "Greater Mystic Essence" }, { 11083, 15.0, 1, 1, "Soul Dust" }, { 11139, 5.4, 1, 1, "Large Glowing Shard" }, { 11134, 3.8, 1, 1, "Lesser Mystic Essence" } } },
+    { q = 2, cls = "armor", lo = 41, hi = 45, loot = { { 11137, 74.8, 1, 1, "Vision Dust" }, { 11174, 21.0, 1, 1, "Lesser Nether Essence" }, { 11135, 12.8, 1, 1, "Greater Mystic Essence" }, { 11177, 5.8, 1, 1, "Small Radiant Shard" }, { 11139, 2.0, 1, 1, "Large Glowing Shard" } } },
+    { q = 2, cls = "armor", lo = 46, hi = 50, loot = { { 11176, 74.8, 1, 1, "Dream Dust" }, { 11137, 30.2, 1, 1, "Vision Dust" }, { 11175, 20.4, 1, 1, "Greater Nether Essence" }, { 11174, 8.2, 1, 1, "Lesser Nether Essence" }, { 11178, 5.8, 1, 1, "Large Radiant Shard" } } },
+    { q = 2, cls = "armor", lo = 51, hi = 55, loot = { { 11176, 74.8, 1, 1, "Dream Dust" }, { 16202, 22.2, 1, 1, "Lesser Eternal Essence" }, { 14343, 3.6, 1, 1, "Small Brilliant Shard" } } },
+    { q = 2, cls = "armor", lo = 56, hi = 60, loot = { { 16204, 74.6, 1, 1, "Illusion Dust" }, { 16203, 22.4, 1, 1, "Greater Eternal Essence" }, { 14344, 9.0, 1, 1, "Large Brilliant Shard" } } },
+    { q = 2, cls = "armor", lo = 61, hi = 65, loot = { { 16204, 74.8, 1, 1, "Illusion Dust" }, { 16203, 22.4, 1, 1, "Greater Eternal Essence" } } },
+    { q = 2, cls = "weapon", lo = 5, hi = 15, loot = { { 10938, 80.6, 1, 1, "Lesser Magic Essence" }, { 10940, 10.0, 1, 1, "Strange Dust" } } },
+    { q = 2, cls = "weapon", lo = 16, hi = 20, loot = { { 10939, 74.8, 1, 1, "Greater Magic Essence" }, { 10940, 25.0, 1, 1, "Strange Dust" }, { 10938, 15.0, 1, 1, "Lesser Magic Essence" }, { 10978, 3.0, 1, 1, "Small Glimmering Shard" } } },
+    { q = 2, cls = "weapon", lo = 21, hi = 25, loot = { { 10939, 75.8, 1, 1, "Greater Magic Essence" }, { 10940, 13.2, 1, 1, "Strange Dust" }, { 10978, 11.8, 1, 1, "Small Glimmering Shard" } } },
+    { q = 2, cls = "weapon", lo = 26, hi = 30, loot = { { 10939, 75.6, 1, 1, "Greater Magic Essence" }, { 11083, 19.6, 1, 1, "Soul Dust" }, { 11084, 5.8, 1, 1, "Large Glimmering Shard" }, { 10978, 3.8, 1, 1, "Small Glimmering Shard" }, { 10940, 2.2, 1, 1, "Strange Dust" } } },
+    { q = 2, cls = "weapon", lo = 31, hi = 35, loot = { { 11134, 75.0, 1, 1, "Lesser Mystic Essence" }, { 11083, 13.8, 1, 1, "Soul Dust" }, { 11138, 7.0, 1, 1, "Small Glowing Shard" } } },
+    { q = 2, cls = "weapon", lo = 36, hi = 40, loot = { { 11135, 73.8, 1, 1, "Greater Mystic Essence" }, { 11137, 9.2, 1, 1, "Vision Dust" }, { 11139, 7.0, 1, 1, "Large Glowing Shard" } } },
+    { q = 2, cls = "weapon", lo = 41, hi = 45, loot = { { 11174, 75.8, 1, 1, "Lesser Nether Essence" }, { 11137, 20.4, 1, 1, "Vision Dust" }, { 11177, 5.0, 1, 1, "Small Radiant Shard" } } },
+    { q = 2, cls = "weapon", lo = 46, hi = 50, loot = { { 11175, 75.0, 1, 1, "Greater Nether Essence" }, { 11176, 17.0, 1, 1, "Dream Dust" }, { 11178, 4.8, 1, 1, "Large Radiant Shard" } } },
+    { q = 2, cls = "weapon", lo = 51, hi = 55, loot = { { 16202, 76.2, 1, 1, "Lesser Eternal Essence" }, { 11176, 18.0, 1, 1, "Dream Dust" }, { 14343, 3.0, 1, 1, "Small Brilliant Shard" } } },
+    { q = 2, cls = "weapon", lo = 56, hi = 60, loot = { { 16203, 75.0, 1, 1, "Greater Eternal Essence" }, { 16204, 22.8, 1, 1, "Illusion Dust" } } },
+    { q = 2, cls = "weapon", lo = 61, hi = 65, loot = { { 16203, 75.4, 1, 1, "Greater Eternal Essence" }, { 16204, 8.8, 1, 1, "Illusion Dust" } } },
+    { q = 3, cls = nil, lo = 5, hi = 15, loot = { { 10940, 78.0, 1, 1, "Strange Dust" }, { 10938, 22.0, 1, 1, "Lesser Magic Essence" } } },
+    { q = 3, cls = nil, lo = 16, hi = 20, loot = { { 10939, 51.0, 1, 1, "Greater Magic Essence" }, { 10940, 32.0, 1, 1, "Strange Dust" }, { 10978, 9.3, 1, 1, "Small Glimmering Shard" } } },
+    { q = 3, cls = nil, lo = 21, hi = 25, loot = { { 10978, 100.0, 1, 1, "Small Glimmering Shard" }, { 10940, 27.4, 1, 1, "Strange Dust" }, { 10939, 6.8, 1, 1, "Greater Magic Essence" }, { 10998, 2.0, 1, 1, "Lesser Astral Essence" } } },
+    { q = 3, cls = nil, lo = 26, hi = 30, loot = { { 11084, 100.0, 1, 1, "Large Glimmering Shard" }, { 11083, 8.2, 1, 1, "Soul Dust" }, { 10978, 2.2, 1, 1, "Small Glimmering Shard" } } },
+    { q = 3, cls = nil, lo = 31, hi = 35, loot = { { 11138, 100.0, 1, 1, "Small Glowing Shard" }, { 11134, 3.6, 1, 1, "Lesser Mystic Essence" } } },
+    { q = 3, cls = nil, lo = 36, hi = 40, loot = { { 11139, 100.0, 1, 1, "Large Glowing Shard" }, { 11137, 30.6, 1, 1, "Vision Dust" }, { 11135, 11.0, 1, 1, "Greater Mystic Essence" }, { 11174, 2.6, 1, 1, "Lesser Nether Essence" } } },
+    { q = 3, cls = nil, lo = 41, hi = 45, loot = { { 11177, 100.0, 1, 1, "Small Radiant Shard" }, { 11174, 19.4, 1, 1, "Lesser Nether Essence" }, { 11137, 16.6, 1, 1, "Vision Dust" }, { 11135, 3.2, 1, 1, "Greater Mystic Essence" } } },
+    { q = 3, cls = nil, lo = 46, hi = 50, loot = { { 11178, 100.0, 1, 1, "Large Radiant Shard" }, { 11175, 29.0, 1, 1, "Greater Nether Essence" }, { 11174, 3.6, 1, 1, "Lesser Nether Essence" } } },
+    { q = 3, cls = nil, lo = 51, hi = 55, loot = { { 14343, 100.0, 1, 1, "Small Brilliant Shard" }, { 16202, 20.4, 1, 1, "Lesser Eternal Essence" }, { 11176, 15.4, 1, 1, "Dream Dust" } } },
+    { q = 3, cls = nil, lo = 56, hi = 60, loot = { { 14344, 100.0, 1, 1, "Large Brilliant Shard" }, { 16203, 35.4, 1, 1, "Greater Eternal Essence" }, { 16204, 30.6, 1, 1, "Illusion Dust" } } },
+    { q = 3, cls = nil, lo = 61, hi = 65, loot = { { 14344, 100.0, 1, 1, "Large Brilliant Shard" }, { 16204, 37.5, 1, 1, "Illusion Dust" }, { 16203, 14.5, 1, 1, "Greater Eternal Essence" } } },
+    { q = 3, cls = nil, lo = 66, hi = 100, loot = { { 14344, 50.0, 1, 1, "Large Brilliant Shard" }, { 20725, 2.0, 1, 1, "Nexus Crystal" } } },
+    { q = 4, cls = nil, lo = 41, hi = 45, loot = { { 11177, 100.0, 1, 1, "Small Radiant Shard" } } },
+    { q = 4, cls = nil, lo = 46, hi = 50, loot = { { 11178, 100.0, 1, 1, "Large Radiant Shard" } } },
+    { q = 4, cls = nil, lo = 51, hi = 55, loot = { { 14343, 98.5, 1, 1, "Small Brilliant Shard" } } },
+    { q = 4, cls = nil, lo = 56, hi = 60, loot = { { 20725, 83.8, 1, 1, "Nexus Crystal" } } },
+    { q = 4, cls = nil, lo = 61, hi = 65, loot = { { 20725, 77.5, 1, 1, "Nexus Crystal" }, { 14344, 9.0, 1, 1, "Large Brilliant Shard" } } },
+    { q = 4, cls = nil, lo = 66, hi = 100, loot = { { 20725, 93.5, 1, 1, "Nexus Crystal" } } },
+}
