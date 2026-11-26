@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 

@@ -1,6 +1,6 @@
 ## Interface: 50400, 50500, 50501, 50502, 50503, 50504, 50505
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
