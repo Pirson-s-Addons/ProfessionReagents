@@ -1,0 +1,1330 @@
+629472|koKR|제독의 보물 상자
+629472|frFR|Coffre au trésor de l’amiral
+629472|deDE|Schatzkiste des Admirals
+629472|zhCN|海军上将的宝箱
+629472|esES|Arqueta de almirante
+629472|ruRU|Адмиральский сундук с сокровищами
+629472|ptBR|Baú do Tesouro do Almirante
+629472|itIT|Admiral's Treasure Chest
+629472|zhTW|上將的寶箱
+629472|esMX|Cofre del tesoro del almirante
+1166|koKR|알렉스턴의 궤짝
+1166|frFR|Coffre d'Alexston
+1166|deDE|Alexstons Truhe
+1166|zhCN|阿历克斯顿的箱子
+1166|esES|Cofre de Alexston
+1166|ruRU|Сундук Алекстона
+1166|ptBR|Baú do Aleixo
+1166|itIT|Alexston's Chest
+1166|zhTW|艾力克斯頓的箱子
+1166|esMX|Cofre de Alexston
+3715|koKR|얼라이언스 궤짝
+3715|frFR|Coffre de l'Alliance
+3715|deDE|Truhe der Allianz
+3715|zhCN|联盟宝箱
+3715|esES|Cofre de la Alianza
+3715|ruRU|Сундук Альянса
+3715|ptBR|Baú da Aliança
+3715|itIT|Alliance Chest
+3715|zhTW|聯盟寶箱
+3715|esMX|Cofre de la Alianza
+656405|koKR|아나스타샤의 은닉함
+656405|frFR|Planque d’Anastasia
+656405|deDE|Anastasias Versteck
+656405|zhCN|安娜斯塔西娅的储藏
+656405|esES|Alijo de Anastasia
+656405|ruRU|Тайник Анастасии
+656405|ptBR|Tesouro de Anastácia
+656405|itIT|Anastasia's Stash
+656405|zhTW|安娜斯塔西婭的儲物箱
+656405|esMX|Alijo de Anastasia
+126260|koKR|고대 궤짝
+126260|frFR|Coffre ancien
+126260|deDE|Uralte Truhe
+126260|zhCN|古代储物箱
+126260|esES|Cofre antiguo
+126260|ruRU|Древний сундук
+126260|ptBR|Baú Antigo
+126260|itIT|Ancient Chest
+126260|zhTW|古代儲物箱
+126260|esMX|Cofre antiguo
+141979|koKR|고대의 보물
+141979|frFR|Trésor ancien
+141979|deDE|Antiker Schatz
+141979|zhCN|古代宝藏
+141979|esES|Tesoro antiguo
+141979|ruRU|Древнее сокровище
+141979|ptBR|Tesouro Antigo
+141979|itIT|Ancient Treasure
+141979|zhTW|古代寶藏
+141979|esMX|Tesoro antiguo
+179697|koKR|투기장 보물상자
+179697|frFR|Coffre au trésor de l'arène
+179697|deDE|Arenaschatztruhe
+179697|zhCN|竞技场财宝箱
+179697|esES|Cofre del tesoro de la arena
+179697|ruRU|Сундук Арены с сокровищами
+179697|ptBR|[Arena Treasure Chest]
+179697|itIT|Arena Treasure Chest
+179697|zhTW|競技場財寶箱
+179697|esMX|Cofre del tesoro de la arena
+142141|koKR|아서스의 눈물
+142141|frFR|Larmes d'Arthas
+142141|deDE|Arthas' Tränen
+142141|zhCN|阿尔萨斯之泪
+142141|esES|Lágrimas de Arthas
+142141|ruRU|Слезы Артаса
+142141|ptBR|Lágrimas-de-arthas
+142141|itIT|Arthas' Tears
+142141|zhTW|阿薩斯之淚
+142141|esMX|Lágrimas de Arthas
+123329|koKR|밸로그의 궤짝
+123329|frFR|Coffre de Baelog
+123329|deDE|Baelogs Truhe
+123329|zhCN|巴尔洛戈的箱子
+123329|esES|Cofre de Baelog
+123329|ruRU|Сундук Бейлога
+123329|ptBR|Baú de Baelog
+123329|itIT|Baelog's Chest
+123329|zhTW|巴爾洛戈的箱子
+123329|esMX|Cofre de Baelog
+19598|koKR|지하굴 은신처
+19598|frFR|Cache des saisons
+19598|deDE|Grabhügelversteck
+19598|zhCN|兽穴储物箱
+19598|esES|Carretilla de alijo
+19598|ruRU|Тайник в кургане
+19598|ptBR|Esconderijo da Ermida
+19598|itIT|Barrow Cache
+19598|zhTW|獸穴儲物箱
+19598|esMX|Carretilla de alijo
+2843|koKR|찌그러진 궤짝
+2843|frFR|Coffre endommagé
+2843|deDE|Ramponierte Truhe
+2843|zhCN|破损的箱子
+2843|esES|Cofre maltrecho
+2843|ruRU|Побитый сундук
+2843|ptBR|Baú Desgastado
+2843|itIT|Battered Chest
+2843|zhTW|破損的箱子
+2843|esMX|Cofre maltrecho
+176589|koKR|검은 연꽃
+176589|frFR|Lotus noir
+176589|deDE|Schwarzer Lotus
+176589|zhCN|黑莲花
+176589|esES|Loto negro
+176589|ruRU|Черный лотос
+176589|ptBR|Lótus Preto
+176589|itIT|Black Lotus
+176589|zhTW|黑蓮花
+176589|esMX|Loto negro
+142143|koKR|실명초
+142143|frFR|Aveuglette
+142143|deDE|Blindkraut
+142143|zhCN|盲目草
+142143|esES|Carolina
+142143|ruRU|Пастушья сумка
+142143|ptBR|Ervacega
+142143|itIT|Blindweed
+142143|zhTW|盲目草
+142143|esMX|Carolina
+1621|koKR|찔레가시
+1621|frFR|Eglantine
+1621|deDE|Wilddornrose
+1621|zhCN|石南草
+1621|esES|Brezospina
+1621|ruRU|Остротерн
+1621|ptBR|Cravespinho
+1621|itIT|Briarthorn
+1621|zhTW|石南草
+1621|esMX|Brezospina
+1622|koKR|생채기풀
+1622|frFR|Doulourante
+1622|deDE|Beulengras
+1622|zhCN|跌打草
+1622|esES|Hierba cardenal
+1622|ruRU|Синячник
+1622|ptBR|Ervamossa
+1622|itIT|Bruiseweed
+1622|zhTW|跌打草
+1622|esMX|Hierba cardenal
+58595|koKR|불타는 칼날단 은신처
+58595|frFR|Planque de la Lame ardente
+58595|deDE|Geheimlager der Burning Blade
+58595|zhCN|火刃营地
+58595|esES|Alijo de la Legión Ardiente
+58595|ruRU|Тайник Пылающего Клинка
+58595|ptBR|Tesouro da Lâmina Ardente
+58595|itIT|Burning Blade Stash
+58595|zhTW|燃刃營地
+58595|esMX|Alijo del Filo Ardiente
+179703|koKR|불의 군주의 보물
+179703|frFR|Cachette du Seigneur du feu
+179703|deDE|Behälter des Feuerfürsten
+179703|zhCN|火焰之王的宝箱
+179703|esES|Botín del Señor del Fuego
+179703|ruRU|Тайник повелителя огня
+179703|ptBR|Baú do Senhor do Fogo
+179703|itIT|Cache of the Firelord
+179703|zhTW|火焰之王的寶箱
+179703|esMX|Alijo del Señor del Fuego
+142184|koKR|선장의 궤짝
+142184|frFR|Coffre du capitaine
+142184|deDE|Truhe des Käpt’ns
+142184|zhCN|船长的箱子
+142184|esES|Cofre del Capitán
+142184|ruRU|Сундук капитана
+142184|ptBR|Baú do Capitão
+142184|itIT|Captain's Chest
+142184|zhTW|船長的箱子
+142184|esMX|Cofre del Capitán
+20925|koKR|선장의 사물함
+20925|frFR|Cantine du capitaine
+20925|deDE|Schließkiste des Captains
+20925|zhCN|船长的手提箱
+20925|esES|Baúl del Capitán
+20925|ruRU|Сундучок капитана
+20925|ptBR|Maleta do Capitão
+20925|itIT|Captain's Footlocker
+20925|zhTW|船長的置物箱
+20925|esMX|Baúl del Capitán
+28024|koKR|짐마차 상자
+28024|frFR|Coffre de la caravane
+28024|deDE|Karawanentruhe
+28024|zhCN|车队箱子
+28024|esES|Cofre de la caravana
+28024|ruRU|Сундук из каравана
+28024|ptBR|Baú da Caravana
+28024|itIT|Caravan Chest
+28024|zhTW|車隊箱子
+28024|esMX|Cofre de la caravana
+105174|koKR|속박의 상자
+105174|frFR|Caisse de coffres de stockage
+105174|deDE|Truhe mit Verwahrungskästen
+105174|zhCN|封灵箱
+105174|esES|Cofre de arcas de contención
+105174|ruRU|Ящик со шкатулками-духоловками
+105174|ptBR|Baú de Cofres de Contenção
+105174|itIT|Chest of Containment Coffers
+105174|zhTW|封靈箱
+105174|esMX|Cofre de arcas de contención
+2742|koKR|안식의 상자
+2742|frFR|Coffre du nichoir
+2742|deDE|Truhe des Nistens
+2742|zhCN|巢穴之箱
+2742|esES|Cofre del nidal
+2742|ruRU|Сундук Гнездования
+2742|ptBR|Baú da Nidificação
+2742|itIT|Chest of Nesting
+2742|zhTW|巢穴之箱
+2742|esMX|Cofre del Nidal
+169243|koKR|일곱 현자의 궤짝
+169243|frFR|Coffre des sept
+169243|deDE|Truhe der Sieben
+169243|zhCN|七贤之箱
+169243|esES|Cofre de los Siete
+169243|ruRU|Сундук Семерых
+169243|ptBR|Baú dos Sete
+169243|itIT|Chest of The Seven
+169243|zhTW|七賢之箱
+169243|esMX|Cofre de los Siete
+2739|koKR|검은 깃털의 상자
+2739|frFR|Coffre de la plume noire
+2739|deDE|Truhe der Blackfeathers
+2739|zhCN|黑羽之箱
+2739|esES|Cofre de la pluma negra
+2739|ruRU|Сундук Черного пера
+2739|ptBR|Baú da Pena Negra
+2739|itIT|Chest of the Black Feather
+2739|zhTW|黑羽之箱
+2739|esMX|Cofre de la pluma negra
+2740|koKR|까마귀 발톱의 상자
+2740|frFR|Coffre de la griffe du corbeau
+2740|deDE|Truhe der Rabenkralle
+2740|zhCN|鸦爪之箱
+2740|esES|Cofre de la garra del cuervo
+2740|ruRU|Сундук Вороньего Когтя
+2740|ptBR|Baú da Garra de Corvo
+2740|itIT|Chest of the Raven Claw
+2740|zhTW|鴉爪之箱
+2740|esMX|Cofre de la garra del Cuervo
+2741|koKR|천상의 상자
+2741|frFR|Coffre des cieux
+2741|deDE|Truhe des Himmels
+2741|zhCN|天空之箱
+2741|esES|Cofre del cielo
+2741|ruRU|Сундук Небес
+2741|ptBR|Baú do Céu
+2741|itIT|Chest of the Sky
+2741|zhTW|天空之箱
+2741|esMX|Cofre del cielo
+656332|koKR|호박석 덩어리
+656332|frFR|Morceau d’ambre
+656332|deDE|Bernbrocken
+656332|zhCN|琥珀块
+656332|esES|Trozo de ámbar
+656332|ruRU|Кусок янтаря
+656332|ptBR|Pedaço de Âmbar
+656332|itIT|Chunk of Amber
+656332|zhTW|一塊琥珀
+656332|esMX|Trozo de ámbar
+1731|koKR|구리 광맥
+1731|frFR|Filon de cuivre
+1731|deDE|Kupfervorkommen
+1731|zhCN|铜矿
+1731|esES|Filón de cobre
+1731|ruRU|Медная жила
+1731|ptBR|Veio de Cobre
+1731|itIT|Copper Vein
+1731|zhTW|銅礦
+1731|esMX|Filón de cobre
+92423|koKR|부서진 궤짝
+92423|frFR|Coffre endommagé
+92423|deDE|Beschädigte Truhe
+92423|zhCN|破损的箱子
+92423|esES|Cofre dañado
+92423|ruRU|Поврежденный сундук
+92423|ptBR|Baú Danificado
+92423|itIT|Damaged Chest
+92423|zhTW|破損的箱子
+92423|esMX|Cofre dañado
+160845|koKR|검은 금고
+160845|frFR|Coffre sombre
+160845|deDE|Dunkler Kasten
+160845|zhCN|黑暗宝箱
+160845|esES|Arca oscura
+160845|ruRU|Черный ящик
+160845|ptBR|Cofre Sombrio
+160845|itIT|Dark Coffer
+160845|zhTW|黑暗寶箱
+160845|esMX|Arca oscura
+165658|koKR|검은무쇠 광맥
+165658|frFR|Gisement de sombrefer
+165658|deDE|Dunkeleisenvorkommen
+165658|zhCN|黑铁矿脉
+165658|esES|Depósito de los Hierro Negro
+165658|ruRU|Залежи черного железа
+165658|ptBR|Depósito de Ferro Negro
+165658|itIT|Dark Iron Deposit
+165658|zhTW|黑鐵礦床
+165658|esMX|Depósito de hierro negro
+85563|koKR|썩은니의 금고
+85563|frFR|Coffre de Dent-Morte
+85563|deDE|Stumpfzahns Geldkassette
+85563|zhCN|蛀牙杰克的箱子
+85563|esES|Caja fuerte de Dentomuerto
+85563|ruRU|Сейф Мертвозуба
+85563|ptBR|Caixa-forte do Dente-podre
+85563|itIT|Dead-tooth's Strongbox
+85563|zhTW|蛀牙傑克的箱子
+85563|esMX|Caja fuerte de Dentomuerto
+21052|koKR|데피아즈단 금고
+21052|frFR|Coffre des Défias
+21052|deDE|Geldkassette der Defias
+21052|zhCN|迪菲亚保险箱
+21052|esES|Caja fuerte de los Defias
+21052|ruRU|Сейф Братства Справедливости
+21052|ptBR|Caixa-forte dos Défias
+21052|itIT|Defias Strongbox
+21052|zhTW|迪菲亞保險箱
+21052|esMX|Caja fuerte de los Defias
+566786|koKR|악마현자
+566786|frFR|Sauge démoniaque
+566786|deDE|Dämonensalbei
+566786|zhCN|恶魔贤者
+566786|esES|[Demonsage]
+566786|ruRU|Демоническая полынь
+566786|ptBR|[Demonsage]
+566786|itIT|[Demonsage]
+566786|zhTW|[Demonsage]
+566786|esMX|[Demonsage]
+626718|koKR|찌그러진 궤짝
+626718|frFR|Coffre abîmé
+626718|deDE|Verbeulte Truhe
+626718|zhCN|凹陷的箱子
+626718|esES|Cofre abollado
+626718|ruRU|Проломленный ящик
+626718|ptBR|Baú Cheio de Mossas
+626718|itIT|Dented Chest
+626718|zhTW|凹陷的箱子
+626718|esMX|Cofre abollado
+103821|koKR|도안의 금고
+103821|frFR|Coffre de Doan
+103821|deDE|Doans Geldkassette
+103821|zhCN|杜安的保险箱
+103821|esES|Caja fuerte de Doan
+103821|ruRU|Сейф Доана
+103821|ptBR|Caixa-forte de Doan
+103821|itIT|Doan's Strongbox
+103821|zhTW|杜安的保險箱
+103821|esMX|Caja fuerte de Doan
+176344|koKR|문서함
+176344|frFR|Coffre de documents
+176344|deDE|Dokumententruhe
+176344|zhCN|文件箱
+176344|esES|Cofre de documentos
+176344|ruRU|Ящик с документами
+176344|ptBR|Baú de Documentos
+176344|itIT|Document Chest
+176344|zhTW|文件箱
+176344|esMX|Cofre de documentos
+175382|koKR|파멸의 궤
+175382|frFR|Coffret de Doomrigger
+175382|deDE|Doomriggers Kasten
+175382|zhCN|末日扣环之箱
+175382|esES|Arca de Equipasino
+175382|ruRU|Металлический ящик Рокового Зажима
+175382|ptBR|Cofre do Finitudo
+175382|itIT|Doomrigger's Coffer
+175382|zhTW|末日扣環之箱
+175382|esMX|Arca de Equipasino
+176584|koKR|꿈풀
+176584|frFR|Feuillerêve
+176584|deDE|Traumblatt
+176584|zhCN|梦叶草
+176584|esES|Hojasueño
+176584|ruRU|Снолист
+176584|ptBR|Folha-de-sonho
+176584|itIT|Dreamfoil
+176584|zhTW|夢葉草
+176584|esMX|Hojasueño
+19597|koKR|드루이드의 은닉처
+19597|frFR|Cache des druides
+19597|deDE|Druidenversteck
+19597|zhCN|德鲁伊的物资
+19597|esES|Alijo de druidas
+19597|ruRU|Тайник друидов
+19597|ptBR|Esconderijo do Druida
+19597|itIT|Druids' Cache
+19597|zhTW|德魯伊的物資
+19597|esMX|Alijo de druidas
+1619|koKR|뱀뿌리
+1619|frFR|Terrestrine
+1619|deDE|Erdwurzel
+1619|zhCN|地根草
+1619|esES|Raíz de tierra
+1619|ruRU|Землекорень
+1619|ptBR|Raiz-telúrica
+1619|itIT|Earthroot
+1619|zhTW|地根草
+1619|esMX|Raíz de tierra
+2042|koKR|미명초
+2042|frFR|Pâlerette
+2042|deDE|Blassblatt
+2042|zhCN|枯叶草
+2042|esES|Pálida
+2042|ruRU|Бледнолист
+2042|ptBR|Some-folha
+2042|itIT|Fadeleaf
+2042|zhTW|枯葉草
+2042|esMX|Pálida
+178084|koKR|펠릭스의 궤짝
+178084|frFR|Coffre de Felix
+178084|deDE|Felix' Truhe
+178084|zhCN|菲利克斯的箱子
+178084|esES|Cofre de Felix
+178084|ruRU|Сундук Феликса
+178084|ptBR|Baú do Félix
+178084|itIT|Felix's Chest
+178084|zhTW|菲利克斯的箱子
+178084|esMX|Cofre de Félix
+179516|koKR|펜구스의 궤짝
+179516|frFR|Coffre de Fengus
+179516|deDE|Fengus Truhe
+179516|zhCN|芬古斯的箱子
+179516|esES|Cofre de Fengus
+179516|ruRU|Сундук Фенгуса
+179516|ptBR|Baú de Fengus
+179516|itIT|Fengus's Chest
+179516|zhTW|芬古斯的箱子
+179516|esMX|Cofre de Fengus
+103574|koKR|채워진 속박의 상자
+103574|frFR|Coffre de stockage rempli
+103574|deDE|Gefüllte Verwahrungskästen
+103574|zhCN|装满的封灵箱
+103574|esES|Arca de contención llena
+103574|ruRU|Заполненная шкатулка-духоловка
+103574|ptBR|Cofre de Contenção Cheio
+103574|itIT|Filled Containment Coffer
+103574|zhTW|裝滿的封靈箱
+103574|esMX|Arca de contención llena
+2866|koKR|화염초
+2866|frFR|Fleur de feu
+2866|deDE|Feuerblüte
+2866|zhCN|火焰花
+2866|esES|Flor de fuego
+2866|ruRU|Огнецвет
+2866|ptBR|Ignídea
+2866|itIT|Firebloom
+2866|zhTW|火焰花
+2866|esMX|Flor de fuego
+181366|koKR|기사의 궤짝
+181366|frFR|Coffre des quatre cavaliers
+181366|deDE|Truhe der vier Reiter
+181366|zhCN|四骑士之箱
+181366|esES|Cofre de los Cuatro Jinetes
+181366|ruRU|Сундук Четырех Всадников
+181366|ptBR|[Four Horsemen Chest]
+181366|itIT|Four Horsemen Chest
+181366|zhTW|[Four Horsemen Chest]
+181366|esMX|[Four Horsemen Chest]
+124388|koKR|가레트가의 궤짝
+124388|frFR|Coffre de la famille Garrett
+124388|deDE|Familientruhe der Garretts
+124388|zhCN|加勒特的宝箱
+124388|esES|Cofre de la familia Garrett
+124388|ruRU|Сундук семейства Гарретт
+124388|ptBR|Baú da Família Garreta
+124388|itIT|Garrett Family Chest
+124388|zhTW|加勒特的寶箱
+124388|esMX|Cofre de la familia Garrett
+3646|koKR|트윈브레이드 장군의 금고
+3646|frFR|Coffre du général Twinbraid
+3646|deDE|Geldkassette von General Doppelzopf
+3646|zhCN|塔文布莱德将军的箱子
+3646|esES|Caja fuerte del general Dobletrenza
+3646|ruRU|Сейф генерала Двукоссы
+3646|ptBR|Cofre do General Duas-tranças
+3646|itIT|General Twinbraid's Strongbox
+3646|zhTW|塔文布萊德將軍的箱子
+3646|esMX|Caja fuerte del general Trenzado
+142144|koKR|유령버섯
+142144|frFR|Champignon fantôme
+142144|deDE|Geisterpilz
+142144|zhCN|幽灵菇
+142144|esES|Champiñón fantasma
+142144|ruRU|Призрачная поганка
+142144|ptBR|Cogumelo-fantasma
+142144|itIT|Ghost Mushroom
+142144|zhTW|幽靈菇
+142144|esMX|Champiñón fantasma
+1734|koKR|금 광맥
+1734|frFR|Filon d'or
+1734|deDE|Goldvorkommen
+1734|zhCN|金矿石
+1734|esES|Filón de oro
+1734|ruRU|Золотая жила
+1734|ptBR|Veio de Ouro
+1734|itIT|Gold Vein
+1734|zhTW|金礦脈
+1734|esMX|Filón de oro
+176583|koKR|황금 산삼
+176583|frFR|Sansam doré
+176583|deDE|Goldener Sansam
+176583|zhCN|黄金参
+176583|esES|Sansam dorado
+176583|ruRU|Золотой сансам
+176583|ptBR|Sonsona-dourada
+176583|itIT|Golden Sansam
+176583|zhTW|黃金蔘
+176583|esMX|Sansam dorado
+2046|koKR|황금가시
+2046|frFR|Dorépine
+2046|deDE|Golddorn
+2046|zhCN|金棘草
+2046|esES|Espina de oro
+2046|ruRU|Златошип
+2046|ptBR|Espinheira-dourada
+2046|itIT|Goldthorn
+2046|zhTW|金棘草
+2046|esMX|Espina de oro
+1628|koKR|무덤이끼
+1628|frFR|Tombeline
+1628|deDE|Grabmoos
+1628|zhCN|墓地苔
+1628|esES|Musgo de tumba
+1628|ruRU|Могильный мох
+1628|ptBR|Musgo-de-tumba
+1628|itIT|Grave Moss
+1628|zhTW|墓地苔
+1628|esMX|Musgo de tumba
+142145|koKR|그롬의 피
+142145|frFR|Gromsang
+142145|deDE|Gromsblut
+142145|zhCN|格罗姆之血
+142145|esES|Gromsanguina
+142145|ruRU|Кровь Грома
+142145|ptBR|Sangue-de-grom
+142145|itIT|Gromsblood
+142145|zhTW|格羅姆高之血
+142145|esMX|Gromsanguina
+180215|koKR|학카리 토륨 광맥
+180215|frFR|Filon de thorium Hakkari
+180215|deDE|Hakkari Thoriumvorkommen
+180215|zhCN|哈卡莱瑟银矿脉
+180215|esES|Filon de torio de Hakkari
+180215|ruRU|Ториевая жила Хаккари
+180215|ptBR|Veio de Tório Hakkari
+180215|itIT|Hakkari Thorium Vein
+180215|zhTW|哈卡萊瑟銀礦脈
+180215|esMX|[Hakkari Thorium Vein]
+566779|koKR|육중한 토륨 광맥
+566779|frFR|Filon de thorium lourd
+566779|deDE|Schweres Thoriumvorkommen
+566779|zhCN|沉重的瑟银矿
+566779|esES|[Heavy Thorium Vein]
+566779|ruRU|Жила тяжелого тория
+566779|ptBR|[Heavy Thorium Vein]
+566779|itIT|Heavy Thorium Vein
+566779|zhTW|[Heavy Thorium Vein]
+566779|esMX|[Heavy Thorium Vein]
+2039|koKR|숨겨진 금고
+2039|frFR|Coffre dissimulé
+2039|deDE|Versteckte Geldkassette
+2039|zhCN|隐蔽的保险箱
+2039|esES|Caja fuerte oculta
+2039|ruRU|Потайной сейф
+2039|ptBR|Cofre Escondido
+2039|itIT|Hidden Strongbox
+2039|zhTW|隱蔽的保險箱
+2039|esMX|Caja fuerte oculta
+105578|koKR|호드 궤짝
+105578|frFR|Coffre de la Horde
+105578|deDE|Truhe der Horde
+105578|zhCN|部落储物箱
+105578|esES|Cofre de la Horda
+105578|ruRU|Сундук Орды
+105578|ptBR|Baú da Horda
+105578|itIT|Horde Chest
+105578|zhTW|部落儲物箱
+105578|esMX|Cofre de la Horda
+176588|koKR|얼음송이
+176588|frFR|Calot de glace
+176588|deDE|Eiskappe
+176588|zhCN|冰盖草
+176588|esES|Setelo
+176588|ruRU|Ледяной зев
+176588|ptBR|Chapéu-de-gelo
+176588|itIT|Icecap
+176588|zhTW|冰蓋草
+176588|esMX|Setelo
+1610|koKR|발연 광맥
+1610|frFR|Filon d'incendicite
+1610|deDE|Pyrophor-Mineralvorkommen
+1610|zhCN|火岩矿脉
+1610|esES|Filón de incendicita
+1610|ruRU|Ароматитовая жила
+1610|ptBR|Veio de Incendicita
+1610|itIT|Incendicite Mineral Vein
+1610|zhTW|火岩礦脈
+1610|esMX|Filón de incendicita
+19903|koKR|인듀리움 광맥
+19903|frFR|Filon d'indurium
+19903|deDE|Indurium-Mineralvorkommen
+19903|zhCN|精铁矿脉
+19903|esES|Filón de indurio
+19903|ruRU|Индарилиевая жила
+19903|ptBR|Veio de Indúrio
+19903|itIT|Indurium Mineral Vein
+19903|zhTW|精鐵礦脈
+19903|esMX|Filón de indurio
+1735|koKR|철 광맥
+1735|frFR|Gisement de fer
+1735|deDE|Eisenvorkommen
+1735|zhCN|铁矿石
+1735|esES|Depósito de hierro
+1735|ruRU|Залежи железа
+1735|ptBR|Depósito de Ferro
+1735|itIT|Iron Deposit
+1735|zhTW|鐵礦床
+1735|esMX|Depósito de hierro
+85562|koKR|아이언밴드의 금고
+85562|frFR|Coffre d'Ironband
+85562|deDE|Ironbands Geldkassette
+85562|zhCN|[Ironband's Strongbox]
+85562|esES|Caja fuerte de Vetaferro
+85562|ruRU|Сейф Сталекрута
+85562|ptBR|Cofre de Bandaferro
+85562|itIT|Ironband's Strongbox
+85562|zhTW|鐵環的保險箱
+85562|esMX|Caja fuerte de Vetaferro
+176634|koKR|케를로니안의 상자
+176634|frFR|Coffre de Kerlonian
+176634|deDE|Kerlonians Truhe
+176634|zhCN|克罗尼亚的箱子
+176634|esES|Cofre de Kerlonian
+176634|ruRU|Сундук Керлониана
+176634|ptBR|Baú de Kerlonian
+176634|itIT|Kerlonian's Chest
+176634|zhTW|克羅尼亞的箱子
+176634|esMX|Cofre de Kerlonian
+2043|koKR|카드가의 수염
+2043|frFR|Moustache de Khadgar
+2043|deDE|Khadgars Schnurrbart
+2043|zhCN|卡德加的胡须
+2043|esES|Vibrisa de Khadgar
+2043|ruRU|Кадгаров ус
+2043|ptBR|Bigode-de-hadgar
+2043|itIT|Khadgar's Whisker
+2043|zhTW|卡德加的鬍鬚
+2043|esMX|Mostacho de Khadgar
+1624|koKR|왕꽃잎풀
+1624|frFR|Sang-royal
+1624|deDE|Königsblut
+1624|zhCN|皇血草
+1624|esES|Sangrerregia
+1624|ruRU|Королевская кровь
+1624|ptBR|Sangue-real
+1624|itIT|Kingsblood
+1624|zhTW|皇血草
+1624|esMX|Sangrerregia
+179501|koKR|노트 팀블잭의 은닉품
+179501|frFR|Réserve de Knot Thimblejack
+179501|deDE|Knot Thimblejacks Behälter
+179501|zhCN|诺特·希姆加克的储物箱
+179501|esES|Alijo de Knot Thimblejack
+179501|ruRU|Тайник Уззла Наперстяка
+179501|ptBR|Tesouro do Fiapo Agulhacerta
+179501|itIT|Knot Thimblejack's Cache
+179501|zhTW|諾特·希姆加克的儲物箱
+179501|esMX|Alijo de Knot Thimblejack
+124389|koKR|크롬 스타우트암의 궤짝
+124389|frFR|Coffre de Krom Stoutarm
+124389|deDE|Krom Stoutarms Truhe
+124389|zhCN|克罗姆·粗臂的箱子
+124389|esES|Cofre de Krom Brazofuerte
+124389|ruRU|Сундук Крома Крепкорука
+124389|ptBR|Baú do Krom Braçoforte
+124389|itIT|Krom Stoutarm's Chest
+124389|zhTW|克羅姆·粗臂的箱子
+124389|esMX|Cofre de Krom Brazorrecio
+75293|koKR|찌그러진 대형 궤짝
+75293|frFR|Grand coffre endommagé
+75293|deDE|Große ramponierte Truhe
+75293|zhCN|破碎的大箱子
+75293|esES|Cofre grande abollado
+75293|ruRU|Большой побитый сундук
+75293|ptBR|Baú Desgastado Grande
+75293|itIT|Large Battered Chest
+75293|zhTW|破碎的大箱子
+75293|esMX|Cofre grande abollado
+656333|koKR|커다란 호박석 덩어리
+656333|frFR|Gros morceau d’ambre
+656333|deDE|Großer Bernbrocken
+656333|zhCN|大块琥珀
+656333|esES|Trozo de ámbar grande
+656333|ruRU|Крупный кусок янтаря
+656333|ptBR|Pedaço de Âmbar Grande
+656333|itIT|Large Chunk of Amber
+656333|zhTW|大塊琥珀
+656333|esMX|Trozo de ámbar grande
+131979|koKR|큰 흑단 궤짝
+131979|frFR|Grand coffre de sombrebois
+131979|deDE|Große Dunkelholztruhe
+131979|zhCN|大型黑木箱
+131979|esES|Cofre grande de Leñoscuro
+131979|ruRU|Большой сундук Темного Леса
+131979|ptBR|Baú de Lenhanegra Grande
+131979|itIT|Large Darkwood Chest
+131979|zhTW|大型黑木箱
+131979|esMX|Cofre grande de Leñoscuro
+181069|koKR|커다란 흑요석 덩어리
+181069|frFR|Grand morceau d'obsidienne
+181069|deDE|Großer Obsidianbrocken
+181069|zhCN|大型黑曜石碎块
+181069|esES|Trozo de Obsidiano grande
+181069|ruRU|Большая обсидиановая глыба
+181069|ptBR|[Large Obsidian Chunk]
+181069|itIT|Large Obsidian Chunk
+181069|zhTW|大黑曜石塊
+181069|esMX|[Large Obsidian Chunk]
+74448|koKR|크고 단단한 궤짝
+74448|frFR|Grand coffre solide
+74448|deDE|Große robuste Truhe
+74448|zhCN|坚固的大箱子
+74448|esES|Cofre sólido grande
+74448|ruRU|Большой добротный сундук
+74448|ptBR|Baú Grande Sólido
+74448|itIT|Large Solid Chest
+74448|zhTW|堅固的大箱子
+74448|esMX|Cofre macizo grande
+2653|koKR|저급 혈석 광맥
+2653|frFR|Gisement de pierre de sang inférieure
+2653|deDE|Geringe Blutsteinablagerung
+2653|zhCN|次级血石矿脉
+2653|esES|Depósito de Petrosangre inferior
+2653|ruRU|Малое месторождение кровавого камня
+2653|ptBR|Depósito de Pedra-sangrenta Menor
+2653|itIT|Lesser Bloodstone Deposit
+2653|zhTW|次級血石礦脈
+2653|esMX|Depósito de sangrita inferior
+2041|koKR|생명의 뿌리
+2041|frFR|Vietérule
+2041|deDE|Lebenswurz
+2041|zhCN|活根草
+2041|esES|Vidarraíz
+2041|ruRU|Жизнекорень
+2041|ptBR|Raiz-da-vida
+2041|itIT|Liferoot
+2041|zhTW|活根草
+2041|esMX|Vidarraíz
+272|koKR|맥그란의 고기 상자
+272|frFR|Placard à viande de MacGrann
+272|deDE|MacGranns Fleisch-Spind
+272|zhCN|[MacGrann's Meat Locker]
+272|esES|Estatería de carne de MacGrann
+272|ruRU|Мясной ледник Макгранна
+272|ptBR|Depósito de Carne de MacGrann
+272|itIT|MacGrann's Meat Locker
+272|zhTW|馬克格拉恩的儲肉櫃
+272|esMX|Estantería de carne de MacGrann
+1620|koKR|마법초
+1620|frFR|Mage royal
+1620|deDE|Maguskönigskraut
+1620|zhCN|魔皇草
+1620|esES|Marregal
+1620|ruRU|Магороза
+1620|ptBR|Magi-real
+1620|itIT|Mageroyal
+1620|zhTW|魔皇草
+1620|esMX|Marregal
+176112|koKR|말로의 금고
+176112|frFR|Coffre de Malor
+176112|deDE|Malors Geldkassette
+176112|zhCN|玛洛尔的保险箱
+176112|esES|Caja fuerte de Malor
+176112|ruRU|Сейф Малора
+176112|ptBR|Cofre de Malor
+176112|itIT|Malor's Strongbox
+176112|zhTW|瑪洛爾的保險箱
+176112|esMX|Caja fuerte de Malor
+566788|koKR|악몽풀
+566788|frFR|Hantefeuille
+566788|deDE|Mahrblatt
+566788|zhCN|梦魇草
+566788|esES|[Marefoil]
+566788|ruRU|Конелист
+566788|ptBR|[Marefoil]
+566788|itIT|[Marefoil]
+566788|zhTW|[Marefoil]
+566788|esMX|[Marefoil]
+1562|koKR|치안대장 해거드의 상자
+1562|frFR|Coffre du maréchal Haggard
+1562|deDE|Truhe von Marshal Haggard
+1562|zhCN|哈加德的箱子
+1562|esES|Cofre del alguacil Haggard
+1562|ruRU|Сундук маршала Хаггарда
+1562|ptBR|Baú do Marechal Haggard
+1562|itIT|Marshal Haggard's Chest
+1562|zhTW|哈加德的箱子
+1562|esMX|Cofre del mariscal Haggard
+149036|koKR|마본의 궤짝
+149036|frFR|Coffre de Marvon
+149036|deDE|Marvons Truhe
+149036|zhCN|玛尔冯的箱子
+149036|esES|Cofre de Marvon
+149036|ruRU|Сундук Марвона
+149036|ptBR|Baú do Marlon
+149036|itIT|Marvon's Chest
+149036|zhTW|瑪爾馮的箱子
+149036|esMX|Cofre de Marvon
+2040|koKR|미스릴 광맥
+2040|frFR|Gisement de mithril
+2040|deDE|Mithrilvorkommen
+2040|zhCN|秘银矿脉
+2040|esES|Depósito de mitril
+2040|ruRU|Мифриловые залежи
+2040|ptBR|Depósito de Mithril
+2040|itIT|Mithril Deposit
+2040|zhTW|秘銀礦床
+2040|esMX|Depósito de mitril
+19906|koKR|모크모로크의 금고
+19906|frFR|Coffre de Mok'Morokk
+19906|deDE|Mok'Morokks Geldkassette
+19906|zhCN|莫格穆洛克的保险箱
+19906|esES|Caja fuerte de Mok'Morokk
+19906|ruRU|Сейф Мок'Морокка
+19906|ptBR|Cofre de Mok'Morokk
+19906|itIT|Mok'Morokk's Strongbox
+19906|zhTW|莫格穆洛克的保險箱
+19906|esMX|Caja fuerte de Mok'Morokk
+176586|koKR|은초롱이
+176586|frFR|Sauge-argent des montagnes
+176586|deDE|Bergsilbersalbei
+176586|zhCN|山鼠草
+176586|esES|Salviargenta de montaña
+176586|ruRU|Горный серебряный шалфей
+176586|ptBR|Sálvia-prata-da-montanha
+176586|itIT|Mountain Silversage
+176586|zhTW|山鼠草
+176586|esMX|Salviargenta de montaña
+176944|koKR|오래된 보물 궤짝
+176944|frFR|Vieux coffre au trésor
+176944|deDE|Alte Schatztruhe
+176944|zhCN|旧宝藏箱
+176944|esES|Arqueta antigua
+176944|ruRU|Старый сундук с сокровищами
+176944|ptBR|Baú do Tesouro Antigo
+176944|itIT|Old Treasure Chest
+176944|zhTW|舊寶藏箱
+176944|esMX|Arqueta antigua
+73941|koKR|진흙으로 덮인 금 광맥
+73941|frFR|Filon d'or couvert de limon
+73941|deDE|Brühschlammbedecktes Goldvorkommen
+73941|zhCN|软泥覆盖的金矿脉
+73941|esES|Filón de oro cubierto de moco
+73941|ruRU|Покрытая слизью золотая жила
+73941|ptBR|Veio de Ouro Coberto de Gosma
+73941|itIT|Ooze Covered Gold Vein
+73941|zhTW|[Ooze Covered Gold Vein]
+73941|esMX|[Ooze Covered Gold Vein]
+123310|koKR|진흙으로 덮인 미스릴 광맥
+123310|frFR|Gisement de mithril couvert de vase
+123310|deDE|Brühschlammbedeckte Mithrilablagerung
+123310|zhCN|软泥覆盖的秘银矿脉
+123310|esES|Depósito de mitril cubierto de moco
+123310|ruRU|Покрытые слизью мифриловые залежи
+123310|ptBR|Depósito de Mithril Coberto de Gosma
+123310|itIT|Ooze Covered Mithril Deposit
+123310|zhTW|軟泥覆蓋的秘銀礦床
+123310|esMX|Depósito de mitril cubierto de moco
+177388|koKR|진흙으로 덮인 풍부한 토륨 광맥
+177388|frFR|Riche filon de thorium couvert de limon
+177388|deDE|Brühschlammbedecktes reiches Thoriumvorkommen
+177388|zhCN|软泥覆盖的富瑟银矿脉
+177388|esES|Filón de torio enriquecido cubierto de moco
+177388|ruRU|Покрытая слизью богатая ториевая жила
+177388|ptBR|Veio de Tório Abundante e Coberto de Gosma
+177388|itIT|Ooze Covered Rich Thorium Vein
+177388|zhTW|軟泥覆蓋的富瑟銀礦脈
+177388|esMX|Filón de torio enriquecido cubierto de moco
+73940|koKR|진흙으로 덮인 은 광맥
+73940|frFR|Filon d'argent couvert de limon
+73940|deDE|Brühschlammbedecktes Silbervorkommen
+73940|zhCN|[Ooze Covered Silver Vein]
+73940|esES|Filón de plata cubierto de moco
+73940|ruRU|Покрытая слизью серебряная жила
+73940|ptBR|Veio de Prata Coberto de Gosma
+73940|itIT|Ooze Covered Silver Vein
+73940|zhTW|軟泥覆蓋的銀礦脈
+73940|esMX|[Ooze Covered Silver Vein]
+123848|koKR|진흙으로 덮인 토륨 광맥
+123848|frFR|Filon de thorium couvert de limon
+123848|deDE|Brühschlammbedecktes Thoriumvorkommen
+123848|zhCN|软泥覆盖的瑟银矿脉
+123848|esES|Filón de torio cubierto de moco
+123848|ruRU|Покрытая слизью ториевая жила
+123848|ptBR|Veio de Tório Coberto de Gosma
+123848|itIT|Ooze Covered Thorium Vein
+123848|zhTW|軟泥覆蓋的瑟銀礦脈
+123848|esMX|Filón de torio cubierto de moco
+123309|koKR|진흙으로 덮인 진은 광맥
+123309|frFR|Gisement de vrai-argent couvert de vase
+123309|deDE|Brühschlammbedeckte Echtsilberablagerung
+123309|zhCN|软泥覆盖的真银矿脉
+123309|esES|Depósito de veraplata cubierta de moco
+123309|ruRU|Покрытые слизью залежи истинного серебра
+123309|ptBR|Depósito de Veraprata Coberto de Gosma
+123309|itIT|Ooze Covered Truesilver Deposit
+123309|zhTW|軟泥覆蓋的真銀礦脈
+123309|esMX|[Ooze Covered Truesilver Deposit]
+164910|koKR|화려한 궤짝
+164910|frFR|Coffre orné
+164910|deDE|Verschnörkelte Truhe
+164910|zhCN|华丽的箱子
+164910|esES|Cofre ornamentado
+164910|ruRU|Украшенный сундук
+164910|ptBR|Baú Ornamentado
+164910|itIT|Ornate Chest
+164910|zhTW|華麗的箱子
+164910|esMX|Cofre ornamentado
+1618|koKR|평온초
+1618|frFR|Pacifique
+1618|deDE|Friedensblume
+1618|zhCN|宁神花
+1618|esES|Flor de paz
+1618|ruRU|Мироцвет
+1618|ptBR|Botão-da-paz
+1618|itIT|Peacebloom
+1618|zhTW|寧神花
+1618|esMX|Flor de paz
+37098|koKR|페린의 궤짝
+37098|frFR|Coffre de Perrine
+37098|deDE|Perrines Truhe
+37098|zhCN|派瑞恩的箱子
+37098|esES|Cofre de Perrine
+37098|ruRU|Сундук Перрина
+37098|ptBR|Baú do Perrine
+37098|itIT|Perrine's Chest
+37098|zhTW|派瑞恩的箱子
+37098|esMX|Cofre de Perrine
+13949|koKR|움푹 파인 철제 궤짝
+13949|frFR|Coffre de fer
+13949|deDE|Eingedellte Eisentruhe
+13949|zhCN|铁箱
+13949|esES|Cofre de hierro
+13949|ruRU|Ржавый железный сундук
+13949|ptBR|Baú Coberto de Ferro
+13949|itIT|Pitted Iron Chest
+13949|zhTW|鐵箱
+13949|esMX|Cofre de hierro
+176587|koKR|역병초
+176587|frFR|Fleur de peste
+176587|deDE|Pestblüte
+176587|zhCN|瘟疫花
+176587|esES|flor de peste
+176587|ruRU|Чумоцвет
+176587|ptBR|Pragônia
+176587|itIT|Plaguebloom
+176587|zhTW|瘟疫花
+176587|esMX|Flor de plaga
+562111|koKR|빈약한 구리 광맥
+562111|frFR|Filon de cuivre appauvri
+562111|deDE|Mageres Kupfervorkommen
+562111|zhCN|劣质铜矿
+562111|esES|Filón de cobre pobre
+562111|ruRU|Скудная медная жила
+562111|ptBR|Veio de Cobre Mirrado
+562111|itIT|Poor Copper Vein
+562111|zhTW|貧瘠的銅礦
+562111|esMX|Filón de cobre escasa
+142140|koKR|보라 연꽃
+142140|frFR|Lotus pourpre
+142140|deDE|Lila Lotus
+142140|zhCN|紫莲花
+142140|esES|Loto cárdeno
+142140|ruRU|Лиловый лотос
+142140|ptBR|Lótus Roxo
+142140|itIT|Purple Lotus
+142140|zhTW|紫蓮花
+142140|esMX|Loto cárdeno
+160836|koKR|유물 금고
+160836|frFR|Coffre aux reliques
+160836|deDE|Reliktkasten
+160836|zhCN|古物宝库
+160836|esES|Arca de reliquias
+160836|ruRU|Реликварий
+160836|ptBR|Arca de Relíquia
+160836|itIT|Relic Coffer
+160836|zhTW|古物寶庫
+160836|esMX|Arca de reliquias
+175404|koKR|풍부한 토륨 광맥
+175404|frFR|Riche filon de thorium
+175404|deDE|Reiches Thoriumvorkommen
+175404|zhCN|富瑟银矿
+175404|esES|Filón de torio enriquecido
+175404|ruRU|Богатая ториевая жила
+175404|ptBR|Veio de Tório Abundante
+175404|itIT|Rich Thorium Vein
+175404|zhTW|富瑟銀礦
+175404|esMX|Filón de torio enriquecido
+19021|koKR|녹슨 궤짝
+19021|frFR|Coffre rouillé
+19021|deDE|Rostige Truhe
+19021|zhCN|生锈的箱子
+19021|esES|Cofre oxidado
+19021|ruRU|Ржавый сундук
+19021|ptBR|Baú Enferrujado
+19021|itIT|Rusty Chest
+19021|zhTW|生鏽的箱子
+19021|esMX|Cofre oxidado
+433066|koKR|[Sandfury Cache]
+433066|frFR|Cache des Furie-des-sables
+433066|deDE|Truhe der Sandwüter
+433066|zhCN|[Sandfury Cache]
+433066|esES|[Sandfury Cache]
+433066|ruRU|Тайник племени Песчаной Бури
+433066|ptBR|[Sandfury Cache]
+433066|itIT|Sandfury Cache
+433066|zhTW|[Sandfury Cache]
+433066|esMX|[Sandfury Cache]
+113757|koKR|어둠괴철로단 금고
+113757|frFR|Cachette d'Ombreforge
+113757|deDE|Schattenschmiedecache
+113757|zhCN|暗影熔炉地窖
+113757|esES|Alijo de Forjatiniebla
+113757|ruRU|Тайник Кузни Теней
+113757|ptBR|Baú de Umbraforja
+113757|itIT|Shadowforge Cache
+113757|zhTW|暗影熔爐地窖
+113757|esMX|Alijo de Forjatiniebla
+144054|koKR|샤이의 궤짝
+144054|frFR|Coffre de Shay
+144054|deDE|Shays Truhe
+144054|zhCN|Shay's Chest
+144054|esES|Cofre de Shay
+144054|ruRU|Сундук Шай
+144054|ptBR|Baú da Shay
+144054|itIT|Shay's Chest
+144054|zhTW|沙恩的箱子
+144054|esMX|Cofre de Shay
+1733|koKR|은 광맥
+1733|frFR|Filon d'argent
+1733|deDE|Silbervorkommen
+1733|zhCN|银矿
+1733|esES|Filón de plata
+1733|ruRU|Серебряная жила
+1733|ptBR|Veio de Prata
+1733|itIT|Silver Vein
+1733|zhTW|銀礦
+1733|esMX|Filón de plata
+1617|koKR|은엽수 덤불
+1617|frFR|Feuillargent
+1617|deDE|Silberblatt
+1617|zhCN|银叶草
+1617|esES|Hojaplata
+1617|ruRU|Сребролист
+1617|ptBR|Folha-prata
+1617|itIT|Silverleaf
+1617|zhTW|銀葉草
+1617|esMX|Hojaplata
+19596|koKR|잠든 자의 은닉처
+19596|frFR|Cache des Dormants
+19596|deDE|Schläferversteck
+19596|zhCN|沉睡者的箱子
+19596|esES|Alijo de Durmientes
+19596|ruRU|Тайник Спящих
+19596|ptBR|Esconderijo do Adormecido
+19596|itIT|Sleepers' Cache
+19596|zhTW|沉睡者的箱子
+19596|esMX|Alijo de Durmientes
+181068|koKR|작은 흑요석 덩어리
+181068|frFR|Petit morceau d'obsidienne
+181068|deDE|Kleiner Obsidianbrocken
+181068|zhCN|小型黑曜石碎块
+181068|esES|Trozo pequeño de obsidiano
+181068|ruRU|Маленький кусочек обсидиана
+181068|ptBR|[Small Obsidian Chunk]
+181068|itIT|Small Obsidian Chunk
+181068|zhTW|小黑曜石塊
+181068|esMX|[Small Obsidian Chunk]
+324|koKR|작은 토륨 광맥
+324|frFR|Petit filon de thorium
+324|deDE|Kleines Thoriumvorkommen
+324|zhCN|瑟银矿脉
+324|esES|Filón pequeño de torio
+324|ruRU|Малая ториевая жила
+324|ptBR|Veio de Tório Escasso
+324|itIT|Small Thorium Vein
+324|zhTW|瑟銀礦脈
+324|esMX|Filón pequeño de torio
+2850|koKR|단단한 궤짝
+2850|frFR|Coffre solide
+2850|deDE|Robuste Truhe
+2850|zhCN|坚固的箱子
+2850|esES|Cofre sólido
+2850|ruRU|Добротный сундук
+2850|ptBR|Baú Sólido
+2850|itIT|Solid Chest
+2850|zhTW|堅固的箱子
+2850|esMX|Cofre macizo
+58369|koKR|훔친 철제 궤짝
+58369|frFR|Coffre en fer dérobé
+58369|deDE|Gestohlene Eisentruhe
+58369|zhCN|被偷走的铁箱
+58369|esES|Cofre de hierro robado
+58369|ruRU|Краденый железный сундук
+58369|ptBR|Baú de Ferro Roubado
+58369|itIT|Stolen Iron Chest
+58369|zhTW|被偷走的鐵箱
+58369|esMX|Cofre de hierro robado
+412198|koKR|돌 궤짝
+412198|frFR|Coffre de pierre
+412198|deDE|Steintruhe
+412198|zhCN|[Stone Coffer]
+412198|esES|[Stone Coffer]
+412198|ruRU|Каменный сундук
+412198|ptBR|[Stone Coffer]
+412198|itIT|Stone Coffer
+412198|zhTW|[Stone Coffer]
+412198|esMX|[Stone Coffer]
+1560|koKR|보관함
+1560|frFR|Coffre de stockage
+1560|deDE|Aufbewahrungstruhe
+1560|zhCN|储物箱
+1560|esES|Arcón
+1560|ruRU|Ящик
+1560|ptBR|Baú de Estoque
+1560|itIT|Storage Chest
+1560|zhTW|儲物箱
+1560|esMX|Cofre de almacenamiento
+2045|koKR|갈래물풀
+2045|frFR|Etouffante
+2045|deDE|Würgetang
+2045|zhCN|荆棘藻
+2045|esES|Alga estranguladora
+2045|ruRU|Удавник
+2045|ptBR|Estrangulalga
+2045|itIT|Stranglekelp
+2045|zhTW|荊棘藻
+2045|esMX|Alga estranguladora
+656161|koKR|성장이 더딘 은엽수잎
+656161|frFR|Feuillargent rabougri
+656161|deDE|Verkümmertes Silberblatt
+656161|zhCN|矮小的银叶草
+656161|esES|Hojaplata atrofiada
+656161|ruRU|Чахлый сребролист
+656161|ptBR|Folha-prata Atrofiada
+656161|itIT|Stunted Silverleaf
+656161|zhTW|貧弱的銀葉草
+656161|esMX|Hojaplata atrofiada
+142142|koKR|태양풀
+142142|frFR|Soleillette
+142142|deDE|Sonnengras
+142142|zhCN|太阳草
+142142|esES|Solea
+142142|ruRU|Солнечник
+142142|ptBR|Ervassol
+142142|itIT|Sungrass
+142142|zhTW|太陽草
+142142|esMX|Solea
+32|koKR|가라앉은 상자
+32|frFR|Coffre englouti
+32|deDE|Versunkene Truhe
+32|zhCN|沉没的箱子
+32|esES|Cofre sumergido
+32|ruRU|Затонувший сундук
+32|ptBR|Baú Afundado
+32|itIT|Sunken Chest
+32|zhTW|沉沒的箱子
+32|esMX|Cofre sumergido
+576179|koKR|보급품 상자
+576179|frFR|Cache de fournitures
+576179|deDE|Vorratskiste
+576179|zhCN|补给箱
+576179|esES|Cajón de provisiones
+576179|ruRU|Тайник с припасами
+576179|ptBR|Baú de Suprimentos
+576179|itIT|Supply Cache
+576179|zhTW|補給貯藏箱
+576179|esMX|Alijo de suministros
+179545|koKR|왕자의 궤짝
+179545|frFR|Le coffre du prince
+179545|deDE|Die Truhe des Prinzen
+179545|zhCN|王子的箱子
+179545|esES|El cofre del príncipe
+179545|ruRU|Сундук принца
+179545|ptBR|Baú do Príncipe
+179545|itIT|The Prince's Chest
+179545|zhTW|王子的箱子
+179545|esMX|El cofre del Príncipe
+1732|koKR|주석 광맥
+1732|frFR|Filon d'étain
+1732|deDE|Zinnvorkommen
+1732|zhCN|锡矿
+1732|esES|Filón de estaño
+1732|ruRU|Оловянная жила
+1732|ptBR|Veio de Estanho
+1732|itIT|Tin Vein
+1732|zhTW|錫礦
+1732|esMX|Filón de estaño
+2716|koKR|트렐레인의 궤짝
+2716|frFR|Coffre de Trelane
+2716|deDE|Trelanes Truhe
+2716|zhCN|特雷莱恩的箱子
+2716|esES|Cofre de Trelane
+2716|ruRU|Сундук Трелана
+2716|ptBR|Baú de Trelane
+2716|itIT|Trelane's Chest
+2716|zhTW|特雷萊恩的箱子
+2716|esMX|Cofre de Trelane
+2717|koKR|트렐레인의 사물함
+2717|frFR|Cantine de Trelane
+2717|deDE|Trelanes Schließkiste
+2717|zhCN|特雷莱恩的手提箱
+2717|esES|Baúl de Trelane
+2717|ruRU|Сундучок Трелана
+2717|ptBR|Caixote de Trelane
+2717|itIT|Trelane's Footlocker
+2717|zhTW|特雷萊恩的手提箱
+2717|esMX|Baúl de Trelane
+178144|koKR|트롤 궤짝
+178144|frFR|Coffre de troll
+178144|deDE|Trolltruhe
+178144|zhCN|巨魔的箱子
+178144|esES|Cofre trol
+178144|ruRU|Тролльский сундук
+178144|ptBR|Baú dos Trolls
+178144|itIT|Troll Chest
+178144|zhTW|食人妖的箱子
+178144|esMX|Cofre trol
+2047|koKR|진은 광맥
+2047|frFR|Gisement de vrai-argent
+2047|deDE|Echtsilbervorkommen
+2047|zhCN|真银矿石
+2047|esES|Depósito de veraplata
+2047|ruRU|Залежи истинного серебра
+2047|ptBR|Depósito de Veraprata
+2047|itIT|Truesilver Deposit
+2047|zhTW|真銀礦床
+2047|esMX|Depósito de veraplata
+19877|koKR|벨린데의 사물함
+19877|frFR|Placard de Velinde
+19877|deDE|Velindes Spind
+19877|zhCN|维琳德的柜子
+19877|esES|Armario de Velinde
+19877|ruRU|Сундучок Велинды
+19877|ptBR|Armário de Velinde
+19877|itIT|Velinde's Locker
+19877|zhTW|維琳德的櫃子
+19877|esMX|Armario de Velinde
+670427|koKR|감시관의 사물함
+670427|frFR|Cantine de la gardienne
+670427|deDE|Schließkiste der Aufseherin
+670427|zhCN|守望者的手提箱
+670427|esES|Baúl de la celadora
+670427|ruRU|Сундучок смотрителя
+670427|ptBR|Maleta do Guardião
+670427|itIT|Warden's Footlocker
+670427|zhTW|看守者的置物箱
+670427|esMX|Baúl de celador
+1623|koKR|야생 철쭉
+1623|frFR|Aciérite sauvage
+1623|deDE|Wildstahlblume
+1623|zhCN|野钢花
+1623|esES|Acérita salvaje
+1623|ruRU|Дикий сталецвет
+1623|ptBR|Ácera-agreste
+1623|itIT|Wild Steelbloom
+1623|zhTW|野鋼花
+1623|esMX|Acérita salvaje
+656160|koKR|시든 평온초
+656160|frFR|Pacifique fanée
+656160|deDE|Verwelkte Friedensblume
+656160|zhCN|枯萎的宁神花
+656160|esES|Flor de paz marchita
+656160|ruRU|Увядший мироцвет
+656160|ptBR|Botão-da-paz Murcho
+656160|itIT|Wilted Peacebloom
+656160|zhTW|凋謝的寧神花
+656160|esMX|Flor de paz marchita
+2044|koKR|겨울서리풀
+2044|frFR|Hivernale
+2044|deDE|Winterbiss
+2044|zhCN|冬刺草
+2044|esES|Invernalia
+2044|ruRU|Морозник
+2044|ptBR|Boquinha-do-inverno
+2044|itIT|Wintersbite
+2044|zhTW|冬刺草
+2044|esMX|Invernalia
+141596|koKR|의술사의 궤짝
+141596|frFR|Coffre du sorcier-docteur
+141596|deDE|Hexendoktors Truhe
+141596|zhCN|巫医的箱子
+141596|esES|Cofre del médico brujo
+141596|ruRU|Сундук знахаря
+141596|ptBR|Baú do Mandingueiro
+141596|itIT|Witch Doctor's Chest
+141596|zhTW|巫醫的箱子
+141596|esMX|Cofre del médico brujo
+19022|koKR|낡은 궤짝
+19022|frFR|Coffre usé
+19022|deDE|Abgenutzte Truhe
+19022|zhCN|旧箱子
+19022|esES|Cofre desgastado
+19022|ruRU|Подержанный сундук
+19022|ptBR|Baú Gasto
+19022|itIT|Worn Chest
+19022|zhTW|舊箱子
+19022|esMX|Cofre desgastado
+1765|koKR|낡은 나무 궤짝
+1765|frFR|Coffre en bois usé
+1765|deDE|Abgenutzte Holztruhe
+1765|zhCN|旧木箱
+1765|esES|Cofre de madera desgastado
+1765|ruRU|Подержанный деревянный сундук
+1765|ptBR|Baú de Madeira Gasto
+1765|itIT|Worn Wooden Chest
+1765|zhTW|老舊木製箱
+1765|esMX|Cofre de madera gastado

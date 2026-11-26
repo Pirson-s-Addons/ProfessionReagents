@@ -122,7 +122,7 @@ local function Divider(tooltip, title)
         line:SetPoint("RIGHT", tooltip, "RIGHT", -10, 0)
         line:Show()
     end
-    tooltip:AddLine(title or addon.L["TOOLTIP_TITLE"], 0.55, 0.55, 0.6)
+    tooltip:AddLine(title or addon.L["TOOLTIP_TITLE"], 0.8, 0.8, 0.85)
 end
 addon.Divider = Divider -- tambien para Core/Extras.lua (desencantar, recoleccion)
 
@@ -136,6 +136,12 @@ local function Crop(bg)
     local ratio = (w / h) / 2 -- la imagen es 2:1; el dibujo esta a la derecha
     if ratio < 1 then bg:SetTexCoord(1 - ratio, 1, 0, 1)
     else bg:SetTexCoord(0, 1, 0.5 - 0.5 / ratio, 0.5 + 0.5 / ratio) end
+end
+-- Color de calidad aclarado (35% hacia blanco) para que se lea sobre los fondos
+function addon.LightHex(color)
+    if not (color and color.r) then return "" end
+    local function c(v) return math.floor((v + (1 - v) * 0.35) * 255 + 0.5) end
+    return ("|cff%02x%02x%02x"):format(c(color.r), c(color.g), c(color.b))
 end
 function addon.Background(tooltip, name)
     local bg = backgrounds[tooltip]

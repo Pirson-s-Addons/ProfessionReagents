@@ -27,7 +27,7 @@ local function ItemName(id, english)
         return english
     end
     local color = ITEM_QUALITY_COLORS and quality and ITEM_QUALITY_COLORS[quality]
-    return color and (color.hex .. name .. "|r") or name
+    return color and (addon.LightHex(color) .. name .. "|r") or name
 end
 
 local function Amount(lo, hi)
@@ -135,7 +135,7 @@ local function AddSources(tooltip, itemID)
         local quality = _G["ITEM_QUALITY" .. s.q .. "_DESC"] or L["QUALITY_" .. s.q]
         local kind = s.cls == "weapon" and (AUCTION_CATEGORY_WEAPONS or L["WEAPONS"])
             or s.cls == "armor" and (AUCTION_CATEGORY_ARMOR or L["ARMOR"])
-        local label = (color and color.hex or "") .. quality .. "|r" .. (kind and (" (" .. kind .. ")") or "")
+        local label = addon.LightHex(color) .. quality .. "|r" .. (kind and (" (" .. kind .. ")") or "")
         tooltip:AddDoubleLine("  " .. label .. "  " .. L["ILVL"] .. " " .. s.lo .. "-" .. s.hi, Pct(s.pct),
             0.95, 0.95, 0.95, 0.8, 0.8, 0.8)
     end
@@ -168,12 +168,15 @@ end
 --------------------------------------------------
 -- MENAS Y PLANTAS
 --------------------------------------------------
--- El nodo bajo el raton solo trae su nombre (en el idioma del cliente). Con
--- GatherRadar se pasa a ingles con su API; sin el, vale el nombre tal cual
+-- El nodo bajo el raton solo trae su nombre (en el idioma del cliente): se pasa
+-- a ingles con Data/Forever/NodeNames.lua y, si no esta ahi, con
+-- la API de GatherRadar; si no, vale el nombre tal cual
 -- (clientes en ingles).
 local function NodeByName(text)
     local data = addon.GATHER_NODES
     if data[text] then return data[text] end
+    local english = addon.NODE_NAMES and addon.NODE_NAMES[text] -- Data/Forever/NodeNames.lua
+    if english and data[english] then return data[english] end
     local api = GatherRadarAPI
     if type(api) == "table" and api.version == 1 and api.FindNode and api.GetNodeInfo then
         local ok, id = pcall(api.FindNode, text)
