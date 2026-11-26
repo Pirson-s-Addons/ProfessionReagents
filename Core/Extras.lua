@@ -184,7 +184,7 @@ local function NodeByName(text)
 end
 
 local lastNode
-GameTooltip:HookScript("OnShow", function(tooltip)
+local function AddNode(tooltip)
     local db = addon.db
     if not (db and db.gather) then return end
     if tooltip:GetItem() or tooltip:GetUnit() then return end
@@ -198,7 +198,15 @@ GameTooltip:HookScript("OnShow", function(tooltip)
     addon.Background(tooltip, node.kind == "ore" and "mining" or node.kind == "treasure" and "treasure" or "herbalism")
     AddLoot(tooltip, node.loot)
     tooltip:Show()
-end)
+end
+-- Clientes modernos: tras rellenar la ficha del objeto del mundo. OnShow no
+-- vale ahi: si la ficha ya estaba abierta (de un nodo a otro) no vuelve a saltar.
+if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType
+    and Enum.TooltipDataType.Object then
+    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Object, AddNode)
+else
+    GameTooltip:HookScript("OnShow", AddNode)
+end
 addon.LastNode = function() return lastNode end -- para depurar con /dump
 
 --------------------------------------------------
