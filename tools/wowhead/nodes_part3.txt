@@ -1,9 +1,0 @@
-2040|ore|175|Mithril Deposit|242244|3858~Mithril Ore~95.6~1~1;7912~Solid Stone~38.3~1~4;249425~Bauxite~2.8~1~1;9262~Black Vitriol~1.3~1~1;7909~Aquamarine~0.9~1~1;7910~Star Ruby~0.9~1~1;3864~Citrine~0.9~1~1
-123310|ore|175|Ooze Covered Mithril Deposit|970|3858~Mithril Ore~91.9~1~1;7912~Solid Stone~36.4~1~4;249425~Bauxite~4.2~1~1;7909~Aquamarine~1.2~1~1;7910~Star Ruby~1.2~1~1;3864~Citrine~1~1~1;9262~Black Vitriol~1~1~1
-165658|ore|230|Dark Iron Deposit|36346|11370~Dark Iron Ore~98.8~1~1;249426~Pitchblende~3.9~1~1;9262~Black Vitriol~1.2~1~1;11382~Blood of the Mountain~0.5~1~1
-123309|ore|230|Ooze Covered Truesilver Deposit|2274|7911~Truesilver Ore~94.8~1~1;3864~Citrine~1.2~1~1;7909~Aquamarine~5.2~1~1;249426~Pitchblende~3.4~1~1;7910~Star Ruby~1.7~1~1
-2047|ore|230|Truesilver Deposit|39608|7911~Truesilver Ore~99~1~1;249426~Pitchblende~3.4~1~1;7909~Aquamarine~1.5~1~1;7910~Star Ruby~1.1~1~1;3864~Citrine~1~1~1
-123848|ore|245|Ooze Covered Thorium Vein|3647|10620~Thorium Ore~93.2~1~1;12365~Dense Stone~42.8~1~3;249426~Pitchblende~3.1~1~1;12800~Azerothian Diamond~2.1~1~1;7910~Star Ruby~1.3~1~1;9262~Black Vitriol~1.3~1~1;12364~Huge Emerald~1~1~1;12361~Blue Sapphire~0.8~1~1
-324|ore|245|Small Thorium Vein|120824|10620~Thorium Ore~95.8~1~1;12365~Dense Stone~38.6~1~3;249426~Pitchblende~3.4~1~1;12800~Azerothian Diamond~1~1~1;12799~Large Opal~1~1~1;9262~Black Vitriol~0.9~1~1;7910~Star Ruby~0.9~1~1;12361~Blue Sapphire~0.8~1~1
-180215|ore|275|Hakkari Thorium Vein|2148|10620~Thorium Ore~99.6~1~1;12365~Dense Stone~38.5~1~3;19774~Souldarite~35.6~1~1;12363~Arcane Crystal~3.1~1~1;7910~Star Ruby~1.1~1~1;12364~Huge Emerald~1~1~1;12800~Azerothian Diamond~0.8~1~1;12799~Large Opal~0.7~1~1
-177388|ore|275|Ooze Covered Rich Thorium Vein|23672|12364~Huge Emerald~0.8~1~1;10620~Thorium Ore~50~1~1;12365~Dense Stone~45.7~1~3;249426~Pitchblende~11.4~1~1;12363~Arcane Crystal~8.6~1~1;12800~Azerothian Diamond~4.3~1~1;12361~Blue Sapphire~2.9~1~1;7910~Star Ruby~1.4~1~1

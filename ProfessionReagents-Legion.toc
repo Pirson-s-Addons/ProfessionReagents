@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## Title: |TInterface\AddOns\ProfessionReagents\img\logo_pr:16:16|t |cffd597ffProfessionReagents|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -103,6 +103,7 @@
 ## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
 
 ## SavedVariables: ProfessionReagentsDB
+## OptionalDeps: GatherRadar, Auctionator
 
 Core/Compat.lua
 Locales/enUS.lua
@@ -125,7 +126,7 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Legion.lua
+Data/Legion/Reagents.lua
 Core/ProfessionReagents.lua
 UI/About.lua
 UI/Options.lua

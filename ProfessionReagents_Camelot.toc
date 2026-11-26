@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
@@ -127,8 +127,13 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Forever.lua
-Data/ForeverExtras.lua
+Data/Forever/Reagents.lua
+Data/Forever/Mining.lua
+Data/Forever/Herbalism.lua
+Data/Forever/Treasure.lua
+Data/Forever/NodeNames.lua
+Data/Forever/Enchanting.lua
+Data/Forever/Skinning.lua
 Core/ProfessionReagents.lua
 Core/Extras.lua
 UI/About.lua

@@ -1,0 +1,67 @@
+-- Generado por tools/emulator_extras.py desde pandaria_5.4.8: no editar a mano.
+-- Probabilidades del emulador, aproximadas (no son tablas oficiales).
+local _, addon = ...
+addon = addon or ProfessionReagents -- clientes < 3.0 no pasan argumentos
+
+-- Objeto -> lo que da: { { itemID, pct, min, max, nombre }, ... }
+addon.MILLING = {
+    [765] = { { 39151, 100.0, 2, 4, "Alabaster Pigment" } }, -- Silverleaf
+    [785] = { { 39334, 100.0, 2, 3, "Dusky Pigment" }, { 43103, 25.0, 1, 3, "Verdant Pigment" } }, -- Mageroyal
+    [2447] = { { 39151, 100.0, 2, 4, "Alabaster Pigment" } }, -- Peacebloom
+    [2449] = { { 39151, 100.0, 2, 4, "Alabaster Pigment" } }, -- Earthroot
+    [2450] = { { 39334, 100.0, 2, 4, "Dusky Pigment" }, { 43103, 25.0, 1, 3, "Verdant Pigment" } }, -- Briarthorn
+    [2452] = { { 39334, 100.0, 2, 4, "Dusky Pigment" }, { 43103, 25.0, 1, 3, "Verdant Pigment" } }, -- Swiftthistle
+    [2453] = { { 39334, 100.0, 2, 4, "Dusky Pigment" }, { 43103, 50.0, 1, 3, "Verdant Pigment" } }, -- Bruiseweed
+    [3355] = { { 39338, 100.0, 2, 3, "Golden Pigment" }, { 43104, 25.0, 1, 3, "Burnt Pigment" } }, -- Wild Steelbloom
+    [3356] = { { 39338, 100.0, 2, 4, "Golden Pigment" }, { 43104, 50.0, 1, 3, "Burnt Pigment" } }, -- Kingsblood
+    [3357] = { { 39338, 100.0, 2, 4, "Golden Pigment" }, { 43104, 50.0, 1, 3, "Burnt Pigment" } }, -- Liferoot
+    [3358] = { { 39339, 100.0, 2, 4, "Emerald Pigment" }, { 43105, 50.0, 1, 3, "Indigo Pigment" } }, -- Khadgar's Whisker
+    [3369] = { { 39338, 100.0, 2, 3, "Golden Pigment" }, { 43104, 25.0, 1, 3, "Burnt Pigment" } }, -- Grave Moss
+    [3818] = { { 39339, 100.0, 2, 3, "Emerald Pigment" }, { 43105, 25.0, 1, 3, "Indigo Pigment" } }, -- Fadeleaf
+    [3819] = { { 39339, 100.0, 2, 4, "Emerald Pigment" }, { 43105, 50.0, 1, 3, "Indigo Pigment" } }, -- Dragon's Teeth
+    [3820] = { { 39334, 100.0, 2, 4, "Dusky Pigment" }, { 43103, 50.0, 1, 3, "Verdant Pigment" } }, -- Stranglekelp
+    [3821] = { { 39339, 100.0, 2, 3, "Emerald Pigment" }, { 43105, 25.0, 1, 3, "Indigo Pigment" } }, -- Goldthorn
+    [4625] = { { 39340, 100.0, 2, 3, "Violet Pigment" }, { 43106, 25.0, 1, 3, "Ruby Pigment" } }, -- Firebloom
+    [8831] = { { 39340, 100.0, 2, 3, "Violet Pigment" }, { 43106, 25.0, 1, 3, "Ruby Pigment" } }, -- Purple Lotus
+    [8836] = { { 39340, 100.0, 2, 3, "Violet Pigment" }, { 43106, 25.0, 1, 3, "Ruby Pigment" } }, -- Arthas' Tears
+    [8838] = { { 39340, 100.0, 2, 3, "Violet Pigment" }, { 43106, 25.0, 1, 3, "Ruby Pigment" } }, -- Sungrass
+    [8839] = { { 39340, 100.0, 2, 4, "Violet Pigment" }, { 43106, 50.0, 1, 3, "Ruby Pigment" } }, -- Blindweed
+    [8845] = { { 39340, 100.0, 2, 4, "Violet Pigment" }, { 43106, 50.0, 1, 3, "Ruby Pigment" } }, -- Ghost Mushroom
+    [8846] = { { 39340, 100.0, 2, 4, "Violet Pigment" }, { 43106, 50.0, 1, 3, "Ruby Pigment" } }, -- Gromsblood
+    [13463] = { { 39341, 100.0, 2, 3, "Silvery Pigment" }, { 43107, 25.0, 1, 3, "Sapphire Pigment" } }, -- Dreamfoil
+    [13464] = { { 39341, 100.0, 2, 3, "Silvery Pigment" }, { 43107, 25.0, 1, 3, "Sapphire Pigment" } }, -- Golden Sansam
+    [13465] = { { 39341, 100.0, 2, 4, "Silvery Pigment" }, { 43561, 50.0, 1, 3, "Iridescent Pollen" } }, -- Mountain Silversage
+    [13466] = { { 39341, 100.0, 2, 4, "Silvery Pigment" }, { 43107, 50.0, 1, 3, "Sapphire Pigment" } }, -- Sorrowmoss
+    [13467] = { { 39341, 100.0, 2, 4, "Silvery Pigment" }, { 43107, 50.0, 1, 3, "Sapphire Pigment" } }, -- Icecap
+    [22785] = { { 39342, 100.0, 2, 4, "Nether Pigment" }, { 43108, 25.0, 1, 3, "Ebon Pigment" } }, -- Felweed
+    [22786] = { { 39342, 100.0, 2, 3, "Nether Pigment" }, { 43108, 25.0, 1, 3, "Ebon Pigment" } }, -- Dreaming Glory
+    [22787] = { { 39342, 100.0, 2, 3, "Nether Pigment" }, { 43108, 25.0, 1, 3, "Ebon Pigment" } }, -- Ragveil
+    [22789] = { { 39342, 100.0, 2, 3, "Nether Pigment" }, { 43108, 25.0, 1, 3, "Ebon Pigment" } }, -- Terocone
+    [22790] = { { 39342, 100.0, 2, 4, "Nether Pigment" }, { 43108, 50.0, 1, 3, "Ebon Pigment" } }, -- Ancient Lichen
+    [22791] = { { 39342, 100.0, 2, 4, "Nether Pigment" }, { 43108, 50.0, 1, 3, "Ebon Pigment" } }, -- Netherbloom
+    [22792] = { { 39342, 100.0, 2, 4, "Nether Pigment" }, { 43108, 50.0, 1, 3, "Ebon Pigment" } }, -- Nightmare Vine
+    [22793] = { { 39342, 100.0, 2, 4, "Nether Pigment" }, { 43108, 50.0, 1, 3, "Ebon Pigment" } }, -- Mana Thistle
+    [36901] = { { 39343, 100.0, 2, 3, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Goldclover
+    [36903] = { { 39343, 100.0, 2, 4, "Azure Pigment" }, { 43109, 50.0, 1, 4, "Icy Pigment" } }, -- Adder's Tongue
+    [36904] = { { 39343, 100.0, 2, 4, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Tiger Lily
+    [36905] = { { 39343, 100.0, 2, 4, "Azure Pigment" }, { 43109, 50.0, 1, 3, "Icy Pigment" } }, -- Lichbloom
+    [36906] = { { 39343, 100.0, 2, 4, "Azure Pigment" }, { 43109, 50.0, 1, 3, "Icy Pigment" } }, -- Icethorn
+    [36907] = { { 39343, 100.0, 2, 3, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Talandra's Rose
+    [37921] = { { 39343, 100.0, 2, 3, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Deadnettle
+    [39969] = { { 39343, 100.0, 2, 3, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Fire Seed
+    [39970] = { { 39343, 100.0, 2, 3, "Azure Pigment" }, { 43109, 25.0, 1, 3, "Icy Pigment" } }, -- Fire Leaf
+    [44299] = { { 61979, 100.0, 1, 1, "Ashen Pigment" } }, -- Crinkly Grass
+    [52983] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 25.0, 1, 3, "Burning Embers" } }, -- Cinderbloom
+    [52984] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 25.0, 1, 3, "Burning Embers" } }, -- Stormvine
+    [52985] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 25.0, 1, 3, "Burning Embers" } }, -- Azshara's Veil
+    [52986] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 25.0, 1, 3, "Burning Embers" } }, -- Heartblossom
+    [52987] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 50.0, 1, 3, "Burning Embers" } }, -- Twilight Jasmine
+    [52988] = { { 61979, 100.0, 2, 4, "Ashen Pigment" }, { 61980, 50.0, 1, 3, "Burning Embers" } }, -- Whiptail
+    [52989] = { { 36908, 100.0, 1, 1, "Frost Lotus" } }, -- Deathspore Pod
+    [72234] = { { 79251, 100.0, 2, 3, "Shadow Pigment" }, { 79253, 25.0, 1, 3, "Misty Pigment" } }, -- Green Tea Leaf
+    [72235] = { { 79251, 100.0, 2, 3, "Shadow Pigment" }, { 79253, 25.0, 1, 3, "Misty Pigment" } }, -- Silkweed
+    [72237] = { { 79251, 100.0, 2, 3, "Shadow Pigment" }, { 79253, 25.0, 1, 3, "Misty Pigment" } }, -- Rain Poppy
+    [79010] = { { 79251, 100.0, 2, 3, "Shadow Pigment" }, { 79253, 25.0, 1, 3, "Misty Pigment" } }, -- Snow Lily
+    [79011] = { { 79251, 100.0, 2, 4, "Shadow Pigment" }, { 79253, 50.0, 1, 3, "Misty Pigment" } }, -- Fool's Cap
+    [89639] = { { 79251, 100.0, 2, 3, "Shadow Pigment" }, { 79253, 25.0, 1, 3, "Misty Pigment" } }, -- Desecrated Herb
+}

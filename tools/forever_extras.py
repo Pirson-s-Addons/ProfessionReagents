@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Genera Data/ForeverExtras.lua (solo WoW Forever) desde lo sacado de Wowhead.
+"""Genera Data/Forever/{Mining,Herbalism,Treasure,Enchanting,Skinning}.lua (solo WoW Forever) desde Wowhead.
 
-Entradas (tools/wowhead/, sacadas de wowhead.com/forever con el navegador, 10 s entre paginas):
-  nodes_*.txt  una linea por nodo:  objectID|ore|herb|skill|nombre|muestras|id~nombre~pct~min~max;...
-  de_raw.txt   una linea por material de encantamiento:  itemID#<calidad><a|w><nivel>:pct,...
+Entradas (tools/wowhead/forever/, sacadas de wowhead.com/forever con el navegador, 10 s entre paginas):
+  nodes.txt      una linea por nodo:  objectID|ore|herb|skill|nombre|muestras|id~nombre~pct~min~max;...
+  skinning.txt   una linea por cuero/escama:  itemID|nombre#npc:minNivel:maxNivel:veces:muestras:cant/pct;...
+               (pestana "Desollado de" de cada objeto de Objetos comerciables > Cuero)
+  treasure.txt   como nodes.txt, con tipo "treasure" (cofres: pestana "Contiene" de cada objeto)
+  enchanting.txt una linea por material de encantamiento:  itemID#<calidad><a|w><nivel>:pct,...
                (de la pestana "Desenchantado de" de cada material)
 
 Uso:  python3 tools/forever_extras.py   (desde la raiz del addon)
@@ -14,8 +17,8 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "tools", "wowhead")
-OUT = os.path.join(ROOT, "Data", "ForeverExtras.lua")
+SRC = os.path.join(ROOT, "tools", "wowhead", "forever")
+OUT = os.path.join(ROOT, "Data", "Forever")
 
 GATHER_MAX = 8        # lineas por nodo en la ficha
 DE_MIN_PCT = 2        # menos que esto es ruido de la muestra
@@ -41,7 +44,7 @@ def lua_str(s):
 def read_nodes():
     """Por nombre ingles, la variante con mas muestras (las demas son copias del mismo nodo)."""
     best = {}
-    for path in sorted(glob.glob(os.path.join(SRC, "nodes_*.txt"))):
+    for path in [os.path.join(SRC, f) for f in ("nodes.txt", "treasure.txt") if os.path.exists(os.path.join(SRC, f))]:
         for line in open(path, encoding="utf-8"):
             line = line.strip()
             if not line:
@@ -56,7 +59,7 @@ def read_nodes():
 def read_disenchant():
     """{ (calidad, 'a'|'w'): { nivel: { material: pct } } }"""
     data = {}
-    for line in open(os.path.join(SRC, "de_raw.txt"), encoding="utf-8"):
+    for line in open(os.path.join(SRC, "enchanting.txt"), encoding="utf-8"):
         line = line.strip()
         if not line:
             continue
@@ -68,6 +71,32 @@ def read_disenchant():
             q, cls, lvl, pct = int(m[1]), m[2], int(m[3]), int(m[4])
             data.setdefault((q, cls), {}).setdefault(lvl, {})[int(mat)] = pct
     return data
+
+
+SKIN_MIN_SAMPLES = 20
+TREASURE_MIN_SAMPLES = 20  # menos desuellos que esto es ruido
+
+
+def read_skinning():
+    """{ npc: { 'outof': n, 'loot': { item: (pct, min, max, nombre) } } }"""
+    npcs = {}
+    path = os.path.join(SRC, "skinning.txt")
+    if not os.path.exists(path):
+        return npcs
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if not line:
+            continue
+        head, rows = line.split("#", 1)
+        iid, iname = head.split("|", 1)
+        for row in rows.split(";"):
+            npc, _, _, count, outof, stack = row.split(":", 5)
+            if int(outof) < SKIN_MIN_SAMPLES:
+                continue
+            amounts = [int(c.split(":")[0]) for c in stack.split("/") if c] or [1]
+            entry = npcs.setdefault(int(npc), {"outof": int(outof), "loot": {}})
+            entry["loot"][int(iid)] = (round(int(count) * 100 / int(outof), 1), min(amounts), max(amounts), iname)
+    return npcs
 
 
 def brackets(data):
@@ -99,37 +128,62 @@ def brackets(data):
     return out
 
 
+HEADER = [
+    "-- Generado por tools/forever_extras.py desde Wowhead (wowhead.com/forever): no editar a mano.",
+    "-- Probabilidades observadas por los usuarios de Wowhead, no tablas oficiales.",
+    "local _, addon = ...",
+    "addon = addon or ProfessionReagents -- clientes < 3.0 no pasan argumentos",
+    "",
+]
+
+
+def write(name, lines):
+    with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
+        f.write("\n".join(HEADER + lines) + "\n")
+
+
+def node_lines(nodes, kind):
+    """Las menas o plantas de un tipo, anadidas a addon.GATHER_NODES (lo comparten los dos ficheros)."""
+    lines = ["-- Nodo (nombre en ingles) -> { kind, skill, loot = { { itemID, pct, min, max, nombre }, ... } }",
+             "addon.GATHER_NODES = addon.GATHER_NODES or {}",
+             "local nodes = addon.GATHER_NODES"]
+    for name in sorted(nodes):
+        samples, k, skill, _, loot = nodes[name]
+        if k != kind:
+            continue
+        cells = sorted((c.split("~") for c in loot.split(";")), key=lambda c: -float(c[2]))
+        items = ", ".join("{ %s, %s, %s, %s, %s }" % (iid, pct, lo, hi, lua_str(iname))
+                          for iid, iname, pct, lo, hi in cells[:GATHER_MAX])
+        lines.append("nodes[%s] = { kind = %s, skill = %d, loot = { %s } }" % (lua_str(name), lua_str(k), skill, items))
+    return lines
+
+
 def main():
     nodes = read_nodes()
+    write("Mining.lua", node_lines(nodes, "ore"))
+    write("Herbalism.lua", node_lines(nodes, "herb"))
+    # Cofres con pocas aperturas registradas no dicen nada fiable
+    write("Treasure.lua", node_lines({n: e for n, e in nodes.items() if e[0] >= TREASURE_MIN_SAMPLES}, "treasure"))
+
     de = brackets(read_disenchant())
-    lines = [
-        "-- Generado por tools/forever_extras.py desde Wowhead (wowhead.com/forever): no editar a mano.",
-        "-- Probabilidades observadas por los usuarios de Wowhead, no tablas oficiales.",
-        "local _, addon = ...",
-        "",
-        "-- Nodo (nombre en ingles) -> { kind, skill, loot = { { itemID, pct, min, max, nombre }, ... } }",
-        "addon.GATHER_NODES = {",
-    ]
-    for name in sorted(nodes):
-        samples, kind, skill, _, loot = nodes[name]
-        cells = sorted((c.split("~") for c in loot.split(";")), key=lambda c: -float(c[2]))
-        items = []
-        for iid, iname, pct, lo, hi in cells[:GATHER_MAX]:
-            items.append("{ %s, %s, %s, %s, %s }" % (iid, pct, lo, hi, lua_str(iname)))
-        lines.append("    [%s] = { kind = %s, skill = %d, loot = { %s } }," % (
-            lua_str(name), lua_str(kind), skill, ", ".join(items)))
-    lines += ["}", "",
-              "-- Tramos de desencantamiento: calidad, tipo (nil = cualquiera), niveles y lo que da",
-              "addon.DISENCHANT = {"]
+    lines = ["-- Tramos de desencantamiento: calidad, tipo (nil = cualquiera), niveles y lo que da",
+             "addon.DISENCHANT = {"]
     for q, label, lo, hi, loot in de:
         items = ", ".join("{ %d, %s, 1, 1, %s }" % (mat, pct, lua_str(MATERIALS.get(mat, str(mat))))
                           for mat, pct in loot)
         cls = lua_str(label) if label else "nil"
         lines.append("    { q = %d, cls = %s, lo = %d, hi = %d, loot = { %s } }," % (q, cls, lo, hi, items))
-    lines.append("}")
-    with open(OUT, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
-    print("%d nodos, %d tramos -> %s" % (len(nodes), len(de), os.path.relpath(OUT, ROOT)))
+    write("Enchanting.lua", lines + ["}"])
+
+    skin = read_skinning()
+    lines = ["-- Criatura (npcID) -> lo que da al desollarla: { { itemID, pct, min, max, nombre }, ... }",
+             "addon.SKINNING = {"]
+    for npc in sorted(skin):
+        loot = sorted(skin[npc]["loot"].items(), key=lambda e: -e[1][0])[:GATHER_MAX]
+        items = ", ".join("{ %d, %s, %d, %d, %s }" % (i, p, lo, hi, lua_str(n)) for i, (p, lo, hi, n) in loot)
+        lines.append("    [%d] = { %s }," % (npc, items))
+    write("Skinning.lua", lines + ["}"])
+    print("%d nodos, %d tramos, %d criaturas -> Data/Forever/" % (len(nodes), len(de), len(skin)))
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 ## Interface: 30300, 30400, 30401, 30402, 30403, 30404, 30405, 38000, 38001, 38002
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
@@ -104,6 +104,7 @@
 ## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
 
 ## SavedVariables: ProfessionReagentsDB
+## OptionalDeps: GatherRadar, Auctionator
 
 Core/Compat.lua
 Locales/enUS.lua
@@ -126,7 +127,15 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Wrath.lua
+Data/Wrath/Reagents.lua
+Data/Wrath/Mining.lua
+Data/Wrath/Herbalism.lua
+Data/Wrath/Treasure.lua
+Data/Wrath/Enchanting.lua
+Data/Wrath/Skinning.lua
+Data/Wrath/Prospecting.lua
+Data/Wrath/Milling.lua
 Core/ProfessionReagents.lua
+Core/Extras.lua
 UI/About.lua
 UI/Options.lua

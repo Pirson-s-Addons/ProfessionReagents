@@ -1,6 +1,6 @@
 ## Interface: 120001, 120005, 120007, 120100, 120105, 120107
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
@@ -104,6 +104,7 @@
 ## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
 
 ## SavedVariables: ProfessionReagentsDB
+## OptionalDeps: GatherRadar, Auctionator
 
 Core/Compat.lua
 Locales/enUS.lua
@@ -126,7 +127,7 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Retail.lua
+Data/Retail/Reagents.lua
 Core/ProfessionReagents.lua
 UI/About.lua
 UI/Options.lua

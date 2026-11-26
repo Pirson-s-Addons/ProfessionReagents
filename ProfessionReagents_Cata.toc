@@ -1,6 +1,6 @@
 ## Interface: 40300, 40400, 40401, 40402
 ## Author: Pirson
-## Version: 1.01
+## Version: 1.02
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 
@@ -104,6 +104,7 @@
 ## AddonCompartmentFunc: ProfessionReagents_OnAddonCompartmentClick
 
 ## SavedVariables: ProfessionReagentsDB
+## OptionalDeps: GatherRadar, Auctionator
 
 Core/Compat.lua
 Locales/enUS.lua
@@ -126,7 +127,15 @@ Locales/hiIN.lua
 Locales/thTH.lua
 Locales/viVN.lua
 Locales/csCZ.lua
-Data/Cata.lua
+Data/Cata/Reagents.lua
+Data/Cata/Enchanting.lua
+Data/Cata/Herbalism.lua
+Data/Cata/Treasure.lua
+Data/Cata/Milling.lua
+Data/Cata/Mining.lua
+Data/Cata/Prospecting.lua
+Data/Cata/Skinning.lua
 Core/ProfessionReagents.lua
+Core/Extras.lua
 UI/About.lua
 UI/Options.lua
