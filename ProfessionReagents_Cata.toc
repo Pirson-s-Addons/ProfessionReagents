@@ -1,6 +1,6 @@
 ## Interface: 40300, 40400, 40401, 40402
 ## Author: Pirson
-## Version: 1.02
+## Version: 1.03
 ## IconTexture: Interface\AddOns\ProfessionReagents\img\logo_pr
 ## Title: |cffd597ffProfessionReagents|r
 

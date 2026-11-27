@@ -168,7 +168,7 @@ end
 -- Fondo de un reagente segun su subclase de "Objetos comerciables" (7.0+;
 -- antes no hay GetItemInfoInstant y queda el generico)
 local TRADE_GOODS, BG_BY_SUBCLASS = 7, {
-    [4] = "prospecting", [5] = "crafting", [6] = "skinning", [7] = "mining", [8] = "fishing",
+    [4] = "prospecting", [5] = "crafting", [6] = "skinning", [7] = "mining", [8] = "cooking",
     [9] = "herbalism", [10] = "extraction", [12] = "enchanting", [16] = "milling",
 }
 local GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant

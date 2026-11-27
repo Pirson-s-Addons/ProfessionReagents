@@ -1,6 +1,6 @@
 ## Interface: 90205
 ## Author: Pirson
-## Version: 1.02
+## Version: 1.03
 ## Title: |TInterface\AddOns\ProfessionReagents\img\logo_pr:16:16|t |cffd597ffProfessionReagents|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
